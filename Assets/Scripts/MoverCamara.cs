@@ -25,5 +25,4 @@ public class MoverCamara : MonoBehaviour
         float z = transform.position.z;//el z es de la camara
         transform.position = new Vector3(x, y, z);
     }
-}
-*/
+}*/
