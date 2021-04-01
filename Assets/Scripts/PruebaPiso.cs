@@ -1,13 +1,14 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
  *Ariadna Huesca Coronado
- *Código que tiene un estado estaEnPiso(booleano)
+ *Cï¿½digo que tiene un estado estaEnPiso(booleano)
 */
+/*
 public class PruebaPiso : MonoBehaviour
 {
-    // atributo más importante
+    // atributo mï¿½s importante
     public static bool estaEnPiso=false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,3 +36,4 @@ public class PruebaPiso : MonoBehaviour
         
     }
 }
+*/

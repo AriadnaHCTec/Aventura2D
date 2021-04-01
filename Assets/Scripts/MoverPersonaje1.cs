@@ -1,11 +1,11 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
  *Ariadna Huesca Coronado
  *Código responsable de hacer que el personaje se mueva o salte
 */
-/*public class MoverPersonaje : MonoBehaviour
+public class MoverPersonaje : MonoBehaviour
 {
     // Máximas velocidades del personaje
     public float maxVelocidadX = 10;
@@ -26,10 +26,9 @@ using UnityEngine;
 
         //Salto, evitando que se haga 2 veces(en el aire)
         float movVertical = Input.GetAxis("Vertical");
-        if (movVertical > 0 && PruebaPiso.estaEnPiso) 
+        /*if (movVertical > 0 && PruebaPiso.estaEnPiso) 
         {               
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocidadY);
-        }
+        }*/
     }
 }
-*/
