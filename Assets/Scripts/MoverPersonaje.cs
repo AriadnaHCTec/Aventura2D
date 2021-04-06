@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,13 +30,12 @@ public class MoverPersonaje : MonoBehaviour
         //mover de izq a der
         float movHorizontal = Input.GetAxis("Horizontal");
         rigidbody.velocity = new Vector2(movHorizontal * maxVelocidadX, rigidbody.velocity.y);
-       
+
 
         //Salto
         float movVertical = Input.GetAxis("Vertical");
-        if(movVertical > 0 && PruebaPiso.estaEnPiso){
+        if(movVertical > 0 ){/*&& PruebaPiso.estaEnPiso*/
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocidadY);
         }
     }
 }
-*/

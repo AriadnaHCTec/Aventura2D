@@ -1,4 +1,5 @@
-/*using System.Collections;
+/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,7 +41,7 @@ public class CambiaAnimacion : MonoBehaviour
         }
 
         //Verificar si el personaje esta saltando
-        anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
+        //anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
     }
     }
 }
