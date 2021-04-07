@@ -1,4 +1,3 @@
-/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +14,7 @@ public class CambiaAnimacion : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator anim;
     private SpriteRenderer sprRenderer;
+    public bool saltando = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,15 +34,15 @@ public class CambiaAnimacion : MonoBehaviour
         anim.SetFloat(name:"velocidad", velocidad);
 
 
-        if(rb2D.velocity.x > 0){
+        if(rb2D.velocity.x < 0){
             sprRenderer.flipX = false;
-        }else if(rb2D.velocity.x < 0){
+        }else if(rb2D.velocity.x > 0){
             sprRenderer.flipX = true;
         }
 
         //Verificar si el personaje esta saltando
-        //anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
+        anim.SetBool("saltando", !PruebaPiso.estaEnPiso);
+        saltando = !PruebaPiso.estaEnPiso;
+//        print(!PruebaPiso.estaEnPiso);
     }
-    }
-}
-*/
+ }
