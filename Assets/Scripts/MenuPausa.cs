@@ -9,6 +9,8 @@ public class MenuPausa : MonoBehaviour
     public GameObject pantallaPausa; //Panel obscuro que creamos en unity
     //pusimos gameobject en vez de panel
     //se pone como object para que pueda funcionar con más cosas como canvas, panel, etc
+    public GameObject pantallaConfirmacion;
+    public bool ConfirmarSalir;//va a empezar en false
 
     //Solicitar pausa/quitar pausa
     public void Pausar(){
@@ -30,16 +32,27 @@ public class MenuPausa : MonoBehaviour
         //si el usuario clickeo en la tecla escape se pausa
         if(Input.GetKeyDown(KeyCode.Escape)){
             Pausar();
-        }   
+        }
     }
 
-    //Sale del juego y regresa al menu principal
-    public void SalirDelJuego(){
 
+    public void IrAMenuSalirDelJuego(){
+        //Cambiar a escena donde se pregunta al usuario que confirme que desea salir o continuar
+        pantallaPausa.SetActive(false);
+        pantallaConfirmacion.SetActive(true);
+    }
+
+
+    public void RegresarAMenuPausa(){
+        //Metodo que se asigna al boton de "no" y regresa al menu de pausa
+        pantallaConfirmacion.SetActive(false);
+        pantallaPausa.SetActive(true);
+    }
+
+    public void SalirDelJuego(){
         //Código para guardar información
 
-        //Cambiar a escena principal
-        SceneManager.LoadScene("MenuPrincipal");
-
+        //Ir a menu principal
+        SceneManager.LoadScene("MenuPrincipal");  
     }
 }
