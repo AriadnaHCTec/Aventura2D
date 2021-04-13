@@ -11,11 +11,14 @@ public class MenuPausa : MonoBehaviour
     //se pone como object para que pueda funcionar con más cosas como canvas, panel, etc
     public GameObject pantallaConfirmacion;
     public bool ConfirmarSalir;//va a empezar en false
+    //public GameObject HUD;
+    //public bool estadoHUD;
 
     //Solicitar pausa/quitar pausa
     public void Pausar(){
         estaPausado = !estaPausado;
 
+        //HUD.SetActive(!estadoHUD);
         //prende o apaga la pantalla
         pantallaPausa.SetActive(estaPausado);
 

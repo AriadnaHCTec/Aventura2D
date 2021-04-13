@@ -32,6 +32,7 @@ public class Elevador : MonoBehaviour
                 var currentScene = SceneManager.GetActiveScene();
                 var currentSceneName = currentScene.name;
                 if(currentSceneName == "Refugio"){
+                    //Destroy(jugador, 0.5f);
                     SceneManager.LoadScene("Refugio2");
                 }else{
                     SceneManager.LoadScene("Refugio");
