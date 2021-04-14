@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 3880398369894766316}
   - component: {fileID: 3880398369894766319}
   - component: {fileID: 3880398369894766304}
+  - component: {fileID: 772076373935550274}
   m_Layer: 0
   m_Name: Moneda 1
   m_TagString: Moneda
@@ -131,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 3880398369894766315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 3880398369550165089}
   m_Father: {fileID: 0}
@@ -234,6 +235,18 @@ BoxCollider2D:
   m_Size: {x: 0.24724218, y: 0.36848375}
   m_EdgeRadius: 0
 --- !u!114 &3880398369894766304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880398369894766315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f42e79e2ab6b8b4fafe3d4f90fe0416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &772076373935550274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

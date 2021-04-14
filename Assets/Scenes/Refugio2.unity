@@ -321,6 +321,7 @@ MonoBehaviour:
   pantallaPausa: {fileID: 1330302684}
   pantallaConfirmacion: {fileID: 991139063}
   ConfirmarSalir: 0
+  HUD: {fileID: 841642543}
 --- !u!114 &312194516
 MonoBehaviour:
   m_ObjectHideFlags: 0

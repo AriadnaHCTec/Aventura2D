@@ -33,8 +33,8 @@ public class HUD : MonoBehaviour
     }
 
 
-    /*public void ActualizarMonedas(){
+    public void ActualizarMonedas(){
         textoMonedas.text = SaludPersonaje.instance.monedas.ToString();
-    }*/
+    }
 
 }

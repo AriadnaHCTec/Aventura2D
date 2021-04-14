@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
- * Detecta la colisión de la moneda con el personaje
+ * Detecta la colisiï¿½n de la moneda con el personaje
  * Autor: Sara
  */
 public class Moneda : MonoBehaviour
 {
     
-    // La moneda colisionó con otro objeto (colliders)
+    // La moneda colisionï¿½ con otro objeto (colliders)
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -20,13 +20,14 @@ public class Moneda : MonoBehaviour
    
             // Dejar de dibujar a moneda
             GetComponent<SpriteRenderer>().enabled = false;
-            // Prender la explosión
+            // Prender la explosiï¿½n
             // moneda.transform.hijo del transform(transform de la explosion).explosion.Se hace activa
-            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            //gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
             Destroy(gameObject, 0.5f);
 
-            
+            SaludPersonaje.instance.monedas += 25;
+            HUD.instance.ActualizarMonedas();
         }
     }
 }

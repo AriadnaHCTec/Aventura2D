@@ -11,14 +11,14 @@ public class MenuPausa : MonoBehaviour
     //se pone como object para que pueda funcionar con más cosas como canvas, panel, etc
     public GameObject pantallaConfirmacion;
     public bool ConfirmarSalir;//va a empezar en false
-    //public GameObject HUD;
-    //public bool estadoHUD;
+    public GameObject HUD;
+
 
     //Solicitar pausa/quitar pausa
     public void Pausar(){
         estaPausado = !estaPausado;
 
-        //HUD.SetActive(!estadoHUD);
+        HUD.SetActive(!estaPausado);
         //prende o apaga la pantalla
         pantallaPausa.SetActive(estaPausado);
 
@@ -30,10 +30,14 @@ public class MenuPausa : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+
         //si el usuario clickeo en la tecla escape se pausa
-        if(Input.GetKeyDown(KeyCode.Escape)){
+        if(Input.GetKeyDown(KeyCode.Escape) && (estaPausado==false)){
+            Pausar();
+        //si el jugador esta en menu de confirmacion para salir y se aprieta "ESC" se desactiva el menu 
+        }else if(Input.GetKeyDown(KeyCode.Escape) && (HUD.activeSelf==false) ){
+            RegresarAMenuPausa();
             Pausar();
         }
     }
