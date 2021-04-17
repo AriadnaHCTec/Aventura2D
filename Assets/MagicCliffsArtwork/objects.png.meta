@@ -142,8 +142,8 @@ TextureImporter:
       name: small-floating-rock
       rect:
         serializedVersion: 2
-        x: 121
-        y: 136
+        x: 120
+        y: 137
         width: 32
         height: 32
       alignment: 0
@@ -163,8 +163,8 @@ TextureImporter:
       name: floating-rock-2
       rect:
         serializedVersion: 2
-        x: 185
-        y: 136
+        x: 184
+        y: 138
         width: 48
         height: 32
       alignment: 0
@@ -184,7 +184,7 @@ TextureImporter:
       name: floating-rock-1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 16
         width: 48
         height: 39
@@ -205,8 +205,8 @@ TextureImporter:
       name: tree
       rect:
         serializedVersion: 2
-        x: 159
-        y: 16
+        x: 160
+        y: 15
         width: 123
         height: 114
       alignment: 0
@@ -225,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ea953451ef3439b4a813cdee788540b7
     internalID: 0
     vertices: []
     indices: 
