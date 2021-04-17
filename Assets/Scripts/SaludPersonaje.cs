@@ -11,6 +11,5 @@ public class SaludPersonaje : MonoBehaviour
 
     private void Awake(){
         instance = this; //this es un apuntador al objeto que esta ejecutando el código
-    
     }
 }
