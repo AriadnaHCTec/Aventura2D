@@ -7,20 +7,23 @@ public class Elevador : MonoBehaviour
 {
     public bool validar;
     public GameObject jugador;
+    public GameObject pantallaInformativa;
+
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")){
             //Mostrar texto para usar el elevador
-
-
             validar=true;
-  
+            //activar canvas texto
+            pantallaInformativa.SetActive(validar);
         }
     }
 
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        validar = false;        
+        validar = false;     
+        //activar canvas texto
+        pantallaInformativa.SetActive(validar);   
     }
 
 

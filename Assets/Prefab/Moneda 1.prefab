@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 3880398369894766316}
   - component: {fileID: 3880398369894766319}
   - component: {fileID: 3880398369894766304}
-  - component: {fileID: 772076373935550274}
   m_Layer: 0
   m_Name: Moneda 1
   m_TagString: Moneda
@@ -235,18 +234,6 @@ BoxCollider2D:
   m_Size: {x: 0.24724218, y: 0.36848375}
   m_EdgeRadius: 0
 --- !u!114 &3880398369894766304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880398369894766315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f42e79e2ab6b8b4fafe3d4f90fe0416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &772076373935550274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
