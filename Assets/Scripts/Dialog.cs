@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/*
+Se encarga de recibir varias lineas de texto
+y las muestra en un panel para mostrar el dialogo entre personajes
+Autor: Miguel Ángel Pérez López
+*/
+
 public class Dialog : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
@@ -44,7 +50,6 @@ public class Dialog : MonoBehaviour
             //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
-            //Time.timeScale = 1;
             Destroy(barreraControl,0.5f);
         }
     }

@@ -60,20 +60,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de72bc25fa800ee47967bce0a599c81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8205107713185143568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3091041543503770852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dfdec4736627fe4e8dbc07c5c34586a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidas: 4
-  monedas: 0
 --- !u!1001 &6946700474119403186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,6 +136,10 @@ PrefabInstance:
       value: 1.3624249
       objectReference: {fileID: 0}
     - target: {fileID: 6341263291251701401, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341263291251701401, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: be44a43bece4c0c49a2cfc5275dc5114, type: 2}
@@ -163,11 +153,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
---- !u!1 &3091041543503770852 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5368913829053383254, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
-  m_PrefabInstance: {fileID: 6946700474119403186}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3091041543503770855 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5368913829053383253, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
