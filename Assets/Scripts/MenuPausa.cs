@@ -12,6 +12,7 @@ public class MenuPausa : MonoBehaviour
     public GameObject pantallaConfirmacion;
     public bool ConfirmarSalir;//va a empezar en false
     public GameObject HUD;
+    public GameObject pantallaConfiguracion;
 
 
     //Solicitar pausa/quitar pausa
@@ -55,6 +56,20 @@ public class MenuPausa : MonoBehaviour
         pantallaConfirmacion.SetActive(false);
         pantallaPausa.SetActive(true);
     }
+
+
+    public void RegresarDeConfiguracionAMenuPausa(){
+        //Metodo que se asigna al boton de "no" y regresa al menu de pausa
+        pantallaConfiguracion.SetActive(false);
+        pantallaPausa.SetActive(true);
+    }
+
+
+    public void IrAMenuConfiguracion(){
+        pantallaPausa.SetActive(false);
+        pantallaConfiguracion.SetActive(true);
+    }
+
 
     public void SalirDelJuego(){
         //Código para guardar información

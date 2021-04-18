@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6341263291251701401}
   - component: {fileID: 6341263291251701402}
   - component: {fileID: 6341263291251701415}
-  - component: {fileID: 6341263291251701414}
+  - component: {fileID: 2039862199839586635}
   m_Layer: 0
   m_Name: Astronaut
   m_TagString: Untagged
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saltando: 0
---- !u!114 &6341263291251701414
+--- !u!114 &2039862199839586635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,9 +191,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5368913829053383254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de72bc25fa800ee47967bce0a599c81b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dfdec4736627fe4e8dbc07c5c34586a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidas: 4
+  monedas: 0
 --- !u!1 &5368913830281152127
 GameObject:
   m_ObjectHideFlags: 0

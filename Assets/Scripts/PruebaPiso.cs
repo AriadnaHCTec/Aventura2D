@@ -14,11 +14,13 @@ public class PruebaPiso : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Tambien other.gameObject.tag!=Tag
-        /*if (!other.gameObject.CompareTag("Moneda"))
+        if (!other.gameObject.CompareTag("Moneda"))
         {
             estaEnPiso = true;
-        }*/
-        estaEnPiso = true;
+        }else{
+            estaEnPiso = false;
+        }
+        //estaEnPiso = true;
 
     }
 

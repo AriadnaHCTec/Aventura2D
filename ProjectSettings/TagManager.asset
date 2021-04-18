@@ -8,6 +8,8 @@ TagManager:
   - SueloIngeniero
   - ControlPlaticaLibros
   - Enemigo
+  - elevador
+  - pisoGeneral
   layers:
   - Default
   - TransparentFX
