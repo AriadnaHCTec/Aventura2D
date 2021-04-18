@@ -9,8 +9,11 @@ using UnityEngine;
 public class MoverCamara : MonoBehaviour
 {
     public GameObject personaje;
-    public float limiteY;
+    public float limiteIX;
+    public float limiteIY;
     public float limiteX;
+    public float limiteY;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -22,8 +25,8 @@ public class MoverCamara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Mathf.Clamp( personaje.transform.position.x, 0, limiteX);
-        float y = Mathf.Clamp(personaje.transform.position.y, 0, limiteY);
+        float x = Mathf.Clamp( personaje.transform.position.x, limiteIX, limiteX);
+        float y = Mathf.Clamp(personaje.transform.position.y, limiteIY, limiteY);
         float z = transform.position.z;
         transform.position = new Vector3(x, y, z);
     }
