@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 /*
 Se encarga de recibir varias lineas de texto
@@ -18,6 +19,9 @@ public class Dialog : MonoBehaviour
     public GameObject panel;//
     public GameObject continueButton;
     public GameObject barreraControl; //barrera que prohibe que salga del cuarto hasta que acabe la platica
+    public GameObject IngenieroImagen;//ingeniero estatico que espera hasta que acabe la platica
+    public GameObject IngenieroAnimacion;//Ingeniero que camina hasta llegar a las herramientas
+    public GameObject colliderPiso;//borarr el collider que activa la primera platica
 
     void Start() {
         //Time.timeScale = 0;
@@ -51,6 +55,14 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
             panel.SetActive(false);
             Destroy(barreraControl,0.5f);
+            var currentScene = SceneManager.GetActiveScene();
+            var currentSceneName = currentScene.name;
+            if(currentSceneName == "Refugio2"){
+                Destroy(IngenieroImagen, 0.1f);
+                Destroy(colliderPiso, 0.1f);
+                IngenieroAnimacion.SetActive(true);
+
+            }
         }
     }
 
