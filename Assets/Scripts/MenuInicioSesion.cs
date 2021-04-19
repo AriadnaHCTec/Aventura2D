@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,8 +12,8 @@ Ariadna Huesca Coronado
  */
 public class MenuInicioSesion : MonoBehaviour
 {
-    public Text password;
-    public Text usuarioTexto;
+    public Text contraseña;
+    public Text usuario;
     public Text resultado;
     public string inicioSesion;
     public static MenuInicioSesion instance;
@@ -21,11 +22,43 @@ public class MenuInicioSesion : MonoBehaviour
     {
         instance = this;
     }
-    public void IniciarSesion()
+    
+
+    public void EscribirJsonInicioSesion() //Botón
     {
-        resultado.text = usuarioTexto.text;
-        inicioSesion = DateTime.Now.ToString().Substring(11, 8);
-        // CAMBIAR escena
-        SceneManager.LoadScene("EscenaMapa");
+        //Concurrente
+        StartCoroutine(SubirJson());
     }
+
+    //Parte de este código se ejecuta en paralelo
+    private IEnumerator SubirJson()
+    {                
+        WWWForm forma = new WWWForm();
+        forma.AddField("usuario", usuario.text);
+        forma.AddField("contraseña", contraseña.text);
+        UnityWebRequest request = UnityWebRequest.Post("http://localhost:8080/usuario/iniciarSesion", forma);
+        //Aquí es la bifurcación.
+        yield return request.SendWebRequest(); //Regresa, ejecuta y espera
+        // Ya regresó, se terminó de ejecutar.
+        if (request.result == UnityWebRequest.Result.Success) // 200
+        {
+            string textoPlano = request.downloadHandler.text;
+            if(textoPlano == "osiosi")
+            {
+                PlayerPrefs.SetString("usuario", usuario.text);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene("Refugio");                
+            }
+            else
+            {
+                resultado.text = textoPlano;
+            }
+        }
+        else
+        {
+            resultado.text = "Error de inicio de sesión: " + request.responseCode.ToString();
+        }
+    }
+
+
 }
