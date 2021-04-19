@@ -17,6 +17,10 @@ public class PruebaPiso : MonoBehaviour
         if (!other.gameObject.CompareTag("Moneda"))
         {
             estaEnPiso = true;
+        }else if(!other.gameObject.CompareTag("IngenieroAnimacion")){
+            estaEnPiso=true;
+        }else if(!other.gameObject.CompareTag("elevador")){
+            estaEnPiso=true;
         }else{
             estaEnPiso = false;
         }

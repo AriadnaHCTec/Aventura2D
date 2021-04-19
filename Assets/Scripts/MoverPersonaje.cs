@@ -22,6 +22,11 @@ public class MoverPersonaje : MonoBehaviour
     {
         // Inicializar variables
         rigidbody = GetComponent<Rigidbody2D>();    // Enlazar RB -> script
+        //float x = PlayerPrefs.GetFloat("posicionX", -3.4f);
+        //float y = PlayerPrefs.GetFloat("posicionY", -1.8f);
+        //SaludPersonaje.instance.posicionX = x;
+        //SaludPersonaje.instance.posicionY = y;
+        //gameObject.transform.position = new Vector3(x, y, -5);        
     }
 
     // Update is called once per frame (FRECUENTEMENTE, 60 veces/seg)

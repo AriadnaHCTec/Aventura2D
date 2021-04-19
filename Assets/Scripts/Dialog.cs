@@ -55,6 +55,10 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
             panel.SetActive(false);
             Destroy(barreraControl,0.5f);
+            //Preferencias
+            PlayerPrefs.SetInt("platicaConMama1",1);
+            PlayerPrefs.Save();
+            
             var currentScene = SceneManager.GetActiveScene();
             var currentSceneName = currentScene.name;
             if(currentSceneName == "Refugio2"){

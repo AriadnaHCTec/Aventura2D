@@ -11,5 +11,7 @@ public class IrConMama : MonoBehaviour
             //activar canvas dialogo
             controlIrConMama.SetActive(true);
         }
+        //Guardar que el jugador ya platico con el ingeniero
+        PlayerPrefs.SetInt("platicaConIngeniero",1);
     }
 }

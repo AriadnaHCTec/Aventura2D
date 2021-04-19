@@ -11511,7 +11511,7 @@ GameObject:
   - component: {fileID: 1664248383}
   m_Layer: 0
   m_Name: elevadorFinal
-  m_TagString: Untagged
+  m_TagString: elevador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11610,7 +11610,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.5868149}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0.19333334, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -11621,7 +11621,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.02, y: 5.0666666}
+  m_Size: {x: 4.02, y: 3.8930368}
   m_EdgeRadius: 0
 --- !u!1001 &1668014957
 PrefabInstance:
@@ -12450,7 +12450,7 @@ GameObject:
   - component: {fileID: 2036019881}
   m_Layer: 0
   m_Name: Ingeniero
-  m_TagString: Untagged
+  m_TagString: IngenieroAnimacion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

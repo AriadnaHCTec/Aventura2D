@@ -10,6 +10,7 @@ TagManager:
   - Enemigo
   - elevador
   - pisoGeneral
+  - IngenieroAnimacion
   layers:
   - Default
   - TransparentFX
