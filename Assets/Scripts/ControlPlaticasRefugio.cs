@@ -15,26 +15,26 @@ public class ControlPlaticasRefugio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //PlayerPrefs.DeleteAll();
         int platicaIngeniero1 = PlayerPrefs.GetInt("platicaConIngeniero");
         if (platicaIngeniero1 == 1){
             CanvasDialogoMama1.SetActive(false);
             DialogoManagerMama1.SetActive(false);
-            ColliderPlatica2.SetActive(true);
+            ColliderPlatica2.SetActive(true);///collidr que activa la platica con mama2
             Destroy(BarreraControlPlatica1, 0.5f);
         }
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         int platicaMama2 = PlayerPrefs.GetInt("platicaConMama2");
         if(platicaMama2==1){
             CanvasDialogoMama2.SetActive(false);
             DialogoManagerMama2.SetActive(false);
             BarreraControlPlatica2.SetActive(false);
         }
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }

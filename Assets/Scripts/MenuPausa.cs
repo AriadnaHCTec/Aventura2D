@@ -33,13 +33,15 @@ public class MenuPausa : MonoBehaviour
     // Update is called once per frame
     void Update(){
 
-        //si el usuario clickeo en la tecla escape se pausa
-        if(Input.GetKeyDown(KeyCode.Escape) && (estaPausado==false)){
+        if(Input.GetKeyDown(KeyCode.Escape) && (pantallaConfiguracion.activeSelf==true)){
+            RegresarDeConfiguracionAMenuPausa();
             Pausar();
-        //si el jugador esta en menu de confirmacion para salir y se aprieta "ESC" se desactiva el menu 
         }else if(Input.GetKeyDown(KeyCode.Escape) && (HUD.activeSelf==false) ){
             RegresarAMenuPausa();
             Pausar();
+        }else if(Input.GetKeyDown(KeyCode.Escape) && (estaPausado==false)){//si el usuario clickeo en la tecla escape se pausa
+            Pausar();
+        //si el jugador esta en menu de confirmacion para salir y se aprieta "ESC" se desactiva el menu 
         }
     }
 
@@ -75,6 +77,6 @@ public class MenuPausa : MonoBehaviour
         //Código para guardar información
 
         //Ir a menu principal
-        SceneManager.LoadScene("MenuPrincipal");  
+        SceneManager.LoadScene("MenuPrincipal");
     }
 }

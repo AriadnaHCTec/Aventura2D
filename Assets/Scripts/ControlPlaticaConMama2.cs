@@ -6,6 +6,7 @@ public class ControlPlaticaConMama2 : MonoBehaviour
 {
     public GameObject CanvasDialogo;
     public GameObject DialogManager;
+    public GameObject barreraSalidaRefugio;
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")){

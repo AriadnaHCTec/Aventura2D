@@ -14690,7 +14690,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520786432}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9efbe05c258350143a660b2086f84901, type: 3}
@@ -15752,7 +15752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037720625}
   - component: {fileID: 2037720624}
-  - component: {fileID: 2037720626}
+  - component: {fileID: 2037720627}
   m_Layer: 0
   m_Name: ColliderPlaticaMama2
   m_TagString: Untagged
@@ -15800,7 +15800,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2037720626
+--- !u!114 &2037720627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15809,11 +15809,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2037720623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aeba6c58da8cae440a778a9755c215ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a31b6f07b7e4964384492112bedd3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CanvasDialogo: {fileID: 1477606692}
   DialogManager: {fileID: 1699768550}
+  barreraSalidaRefugio: {fileID: 1619871258}
 --- !u!1 &2099835494
 GameObject:
   m_ObjectHideFlags: 0

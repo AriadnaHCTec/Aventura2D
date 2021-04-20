@@ -19,6 +19,14 @@ public class HUD : MonoBehaviour
     }
 
 
+    private void Start(){
+        //Leer el valor desde las preferencias
+        int numeroMonedas = PlayerPrefs.GetInt("numeroMonedas",1);
+        textoMonedas.text = numeroMonedas.ToString();
+        SaludPersonaje.instance.monedas = numeroMonedas;
+    }
+
+
     public void ActualizarVidas(){
         int vidas = SaludPersonaje.instance.vidas;
         if(vidas == 3){
