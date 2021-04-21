@@ -23,7 +23,10 @@ public class Dialog : MonoBehaviour
     public GameObject IngenieroAnimacion;//Ingeniero que camina hasta llegar a las herramientas
     public GameObject colliderPiso;//borarr el collider que activa la primera platica
 
-    void Start() {
+    void Start(){
+        PlayerPrefs.DeleteAll();
+
+
         //Time.timeScale = 0;
         StartCoroutine(Type());
     }

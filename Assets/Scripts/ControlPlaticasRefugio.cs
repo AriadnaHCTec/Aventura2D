@@ -15,7 +15,7 @@ public class ControlPlaticasRefugio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteAll();
         int platicaIngeniero1 = PlayerPrefs.GetInt("platicaConIngeniero");
         if (platicaIngeniero1 == 1){
             CanvasDialogoMama1.SetActive(false);

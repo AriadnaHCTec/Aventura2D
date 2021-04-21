@@ -8,6 +8,7 @@ public class SaludPersonaje : MonoBehaviour
     public int monedas = 0;
     public float posicionX = 0;
     public float posicionY = 0;
+    public bool platicaMama1 = false;
 
     public static SaludPersonaje instance;
 

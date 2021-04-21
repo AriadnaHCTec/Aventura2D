@@ -11112,6 +11112,7 @@ MonoBehaviour:
   validar: 0
   jugador: {fileID: 1105598340}
   pantallaInformativa: {fileID: 765550327}
+  yaUsoElevador: 0
 --- !u!61 &848092656
 BoxCollider2D:
   m_ObjectHideFlags: 0
