@@ -12,7 +12,7 @@ Ariadna Huesca Coronado
  */
 public class MenuInicioSesion : MonoBehaviour
 {
-    public Text contraseña;
+    public Text contraseÃ±a;
     public Text usuario;
     public Text resultado;
     public string inicioSesion;
@@ -24,22 +24,22 @@ public class MenuInicioSesion : MonoBehaviour
     }
     
 
-    public void EscribirJsonInicioSesion() //Botón
+    public void EscribirJsonInicioSesion() //Botï¿½n
     {
         //Concurrente
         StartCoroutine(SubirJson());
     }
 
-    //Parte de este código se ejecuta en paralelo
+    //Parte de este cï¿½digo se ejecuta en paralelo
     private IEnumerator SubirJson()
     {                
         WWWForm forma = new WWWForm();
         forma.AddField("usuario", usuario.text);
-        forma.AddField("contraseña", contraseña.text);
+        forma.AddField("contraseÃ±a", contraseÃ±a.text);
         UnityWebRequest request = UnityWebRequest.Post("http://localhost:8080/usuario/iniciarSesion", forma);
-        //Aquí es la bifurcación.
+        //Aquï¿½ es la bifurcaciï¿½n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
-        // Ya regresó, se terminó de ejecutar.
+        // Ya regresï¿½, se terminï¿½ de ejecutar.
         if (request.result == UnityWebRequest.Result.Success) // 200
         {
             string textoPlano = request.downloadHandler.text;
@@ -56,7 +56,7 @@ public class MenuInicioSesion : MonoBehaviour
         }
         else
         {
-            resultado.text = "Error de inicio de sesión: " + request.responseCode.ToString();
+            resultado.text = "Error de inicio de sesiï¿½n: " + request.responseCode.ToString();
         }
     }
 
