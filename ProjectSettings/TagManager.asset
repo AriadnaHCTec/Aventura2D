@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Moneda
-  - SueloIngeniero
-  - ControlPlaticaLibros
-  - Enemigo
-  - elevador
-  - pisoGeneral
-  - IngenieroAnimacion
-  - fantasma
-  - helicoptero
-  - piso
+  tags: []
   layers:
   - Default
   - TransparentFX
