@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 154659609}
   m_Layer: 0
   m_Name: Platform_Uncolored (4)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 171908034}
   m_Layer: 0
   m_Name: Platform_Uncolored (5)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1280,7 +1280,7 @@ GameObject:
   - component: {fileID: 317250084}
   m_Layer: 0
   m_Name: Platform_Uncolored (6)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 550822721}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9867,7 +9867,7 @@ GameObject:
   - component: {fileID: 768789375}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (5)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10170,7 +10170,7 @@ GameObject:
   - component: {fileID: 906716071}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (4)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10279,7 +10279,7 @@ GameObject:
   - component: {fileID: 944288642}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (6)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10977,7 +10977,7 @@ GameObject:
   - component: {fileID: 1265556399}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (2)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11168,7 +11168,7 @@ GameObject:
   - component: {fileID: 1383817901}
   m_Layer: 0
   m_Name: Platform_Pink_Wide
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11968,7 +11968,7 @@ GameObject:
   - component: {fileID: 1701651607}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (3)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12077,7 +12077,7 @@ GameObject:
   - component: {fileID: 1707014316}
   m_Layer: 0
   m_Name: Platform_Pink_Wide (1)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12395,7 +12395,7 @@ GameObject:
   - component: {fileID: 1735130481}
   m_Layer: 0
   m_Name: Platform_Uncolored (3)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12974,7 +12974,7 @@ GameObject:
   - component: {fileID: 1993353748}
   m_Layer: 5
   m_Name: CanvasMenuPausaYMenuSalir
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13320,7 +13320,7 @@ GameObject:
   - component: {fileID: 2028626486}
   m_Layer: 0
   m_Name: Platform_Uncolored (1)
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

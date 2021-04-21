@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 using UnityEngine.SceneManagement;
 
-public class DialogRefugio3 : MonoBehaviour
+public class DialogoRefugio2 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -13,6 +13,8 @@ public class DialogRefugio3 : MonoBehaviour
     public GameObject panel;//
     public GameObject continueButton;
     public GameObject barreraControl; //barrera que prohibe que salga del cuarto hasta que acabe la platica
+    public GameObject IngenieroImagen;//ingeniero estatico que espera hasta que acabe la platica
+    public GameObject IngenieroAnimacion;//Ingeniero que camina hasta llegar a las herramientas
     public GameObject colliderPiso;//borarr el collider que activa la primera platica
 
     void Start(){
@@ -46,14 +48,12 @@ public class DialogRefugio3 : MonoBehaviour
             StartCoroutine(Type());
         }else{
             textDisplay.text = "";
-            //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
-            Destroy(barreraControl,0.5f);
-            //Preferencias
-            PlayerPrefs.SetInt("platicaConMama2",1);
-            PlayerPrefs.Save();
+            Destroy(colliderPiso, 0.1f);
+            Destroy(barreraControl,0.5f);//BarreraCuartoDeIngeniero
+            Destroy(IngenieroImagen, 0.1f);
+            IngenieroAnimacion.SetActive(true);
         }
     }
-
 }

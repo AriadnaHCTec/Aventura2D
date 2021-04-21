@@ -340,7 +340,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 52733494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247b8506aa27d3c418449bd21a52210d, type: 3}
+  m_Script: {fileID: 11500000, guid: c38da3679a38a6140aac45a2c312fc44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1628112223}
@@ -349,13 +349,10 @@ MonoBehaviour:
   - "Sr. Mario: De ingenier\xEDa el\xE9ctrica y programaci\xF3n."
   - "Personaje: O\xED que despu\xE9s de la guerra no quedaron libros y desapareci\xF3
     el internet."
-  typingSpeed: 0.05
+  typingSpeed: 0.005
   panel: {fileID: 1833392974}
   continueButton: {fileID: 85816485}
   barreraControl: {fileID: 1252591311}
-  IngenieroImagen: {fileID: 0}
-  IngenieroAnimacion: {fileID: 0}
-  colliderPiso: {fileID: 0}
 --- !u!4 &52733496
 Transform:
   m_ObjectHideFlags: 0
@@ -569,7 +566,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 52733495}
-        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_TargetAssemblyTypeName: Dialogo2Refugio2, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -629,6 +626,8 @@ GameObject:
   - component: {fileID: 175873470}
   - component: {fileID: 175873469}
   - component: {fileID: 175873468}
+  - component: {fileID: 175873471}
+  - component: {fileID: 175873472}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -701,6 +700,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &175873471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175873467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460b5c0610b7b9f48ae6be61663c8807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje: {fileID: 1668014958}
+  limiteIX: -100
+  limiteIY: -10
+  limiteX: 25
+  limiteY: 5
+--- !u!114 &175873472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175873467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6fa6c24b62bea42b8fe4ced90ed508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IngenieroAnimacion: {fileID: 0}
+  IngenieroImagen: {fileID: 0}
+  colliderPlatica: {fileID: 0}
 --- !u!1 &185666243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,7 +1316,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 275605740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247b8506aa27d3c418449bd21a52210d, type: 3}
+  m_Script: {fileID: 11500000, guid: e6ab3bde14681484497eefdf3dbe8abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 758713233}
@@ -1294,7 +1325,7 @@ MonoBehaviour:
   - 'Sr. Mario: Hola chico, que se te ofrece?'
   - "Personaje: Nuestro aire acondicionado se descompuso, podr\xEDa repararlo?"
   - 'Sr. Mario: Claro, voy por mis herramientas. Si quieres pasa.'
-  typingSpeed: 0.01
+  typingSpeed: 0.005
   panel: {fileID: 2037643510}
   continueButton: {fileID: 1540445030}
   barreraControl: {fileID: 712806869}
@@ -2455,7 +2486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -36.83, y: -6.4560003}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &801356783
@@ -3283,6 +3314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020406064}
   - component: {fileID: 1020406063}
+  - component: {fileID: 1020406065}
   m_Layer: 0
   m_Name: MusicaFondo
   m_TagString: Untagged
@@ -3400,6 +3432,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020406065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020406062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6fa6c24b62bea42b8fe4ced90ed508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IngenieroAnimacion: {fileID: 2036019875}
+  IngenieroImagen: {fileID: 1409305549}
+  colliderPlatica: {fileID: 2060550796}
 --- !u!1 &1034163910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,7 +4844,7 @@ GameObject:
   - component: {fileID: 1520528387}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: piso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11773,7 +11820,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 275605741}
-        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_TargetAssemblyTypeName: DialogoRefugio2, Assembly-CSharp
         m_MethodName: NextSentence
         m_Mode: 1
         m_Arguments:
@@ -11876,8 +11923,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: -12}
-  m_SizeDelta: {x: 423.737, y: 166.5224}
+  m_AnchoredPosition: {x: 2.2168, y: 0.5474}
+  m_SizeDelta: {x: 441.3033, y: 191.6171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593322509
 MonoBehaviour:
@@ -11905,8 +11952,8 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 50
-    m_Alignment: 0
+    m_MaxSize: 59
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

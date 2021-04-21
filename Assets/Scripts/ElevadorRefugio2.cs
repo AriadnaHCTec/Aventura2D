@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Elevador : MonoBehaviour
+public class ElevadorRefugio2 : MonoBehaviour
 {
     public bool validar;
     public GameObject jugador;
@@ -34,14 +34,11 @@ public class Elevador : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E)){
                 var currentScene = SceneManager.GetActiveScene();
                 var currentSceneName = currentScene.name;
-                if(currentSceneName == "Refugio"){
+                if(currentSceneName == "Refugio3"){
                     SceneManager.LoadScene("Refugio2");
                 }else{
-                    PlayerPrefs.SetInt("platicaIngeniero",1);
                     SceneManager.LoadScene("Refugio3");
-                    
                 }
-                
             }  
         }
     }

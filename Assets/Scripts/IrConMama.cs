@@ -13,5 +13,7 @@ public class IrConMama : MonoBehaviour
         }
         //Guardar que el jugador ya platico con el ingeniero
         PlayerPrefs.SetInt("platicaConIngeniero",1);
+        PlayerPrefs.Save();
+
     }
 }

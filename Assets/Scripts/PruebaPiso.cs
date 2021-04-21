@@ -14,7 +14,7 @@ public class PruebaPiso : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Tambien other.gameObject.tag!=Tag
-        if (!other.gameObject.CompareTag("Moneda") && !other.gameObject.CompareTag("fantasma") && !other.gameObject.CompareTag("IngenieroAnimacion") && !other.gameObject.CompareTag("elevador") && !other.gameObject.CompareTag("helicoptero"))
+        /*if (!other.gameObject.CompareTag("Moneda") && !other.gameObject.CompareTag("fantasma") && !other.gameObject.CompareTag("IngenieroAnimacion") && !other.gameObject.CompareTag("elevador") && !other.gameObject.CompareTag("helicoptero"))
         {
             estaEnPiso = true;
         }/*else if(!other.gameObject.CompareTag("fantasma")){
@@ -26,14 +26,18 @@ public class PruebaPiso : MonoBehaviour
         }else if(!other.gameObject.CompareTag("helicoptero")){
             estaEnPiso=true;
         }*/
-        else{
-            estaEnPiso = false;
+
+        if(other.gameObject.CompareTag("piso")){
+            estaEnPiso=true;
         }
 
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        estaEnPiso = false;        
+        if(collision.gameObject.CompareTag("piso")){
+            estaEnPiso = false;               
+        }
+     
     }
 }
