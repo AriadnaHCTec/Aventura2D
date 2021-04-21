@@ -11,6 +11,7 @@ TagManager:
   - elevador
   - pisoGeneral
   - IngenieroAnimacion
+  - fantasma
   layers:
   - Default
   - TransparentFX

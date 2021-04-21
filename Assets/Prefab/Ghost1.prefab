@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7898677596100362002}
   m_Layer: 0
   m_Name: Ghost1
-  m_TagString: Untagged
+  m_TagString: fantasma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000059604645, y: -0.015031084}
+  m_Offset: {x: -0.01588197, y: -0.052319415}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,7 +150,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.27659762, y: 0.40993783}
+  m_Size: {x: 0.13711157, y: 0.33536118}
   m_EdgeRadius: 0
 --- !u!114 &7898677596100362002
 MonoBehaviour:

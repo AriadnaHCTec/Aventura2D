@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Refugio2.unity
     guid: 2c353889be88ccf449e1cc83391fe9a5
   - enabled: 1
+    path: Assets/Scenes/Refugio3.unity
+    guid: 3ab4f736a6c2d5145b39be4941e64f99
+  - enabled: 1
     path: Assets/Scenes/MenuS/MenuPrincipal.unity
     guid: 385ea657da04ace4dba0c4d455dc079a
   - enabled: 1
