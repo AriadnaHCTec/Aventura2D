@@ -14,19 +14,21 @@ public class PruebaPiso : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Tambien other.gameObject.tag!=Tag
-        if (!other.gameObject.CompareTag("Moneda"))
+        if (!other.gameObject.CompareTag("Moneda") && !other.gameObject.CompareTag("fantasma") && !other.gameObject.CompareTag("IngenieroAnimacion") && !other.gameObject.CompareTag("elevador") && !other.gameObject.CompareTag("helicoptero"))
         {
             estaEnPiso = true;
-        }else if(!other.gameObject.CompareTag("fantasma")){
+        }/*else if(!other.gameObject.CompareTag("fantasma")){
             estaEnPiso = true;
         }else if(!other.gameObject.CompareTag("IngenieroAnimacion")){
             estaEnPiso=true;
         }else if(!other.gameObject.CompareTag("elevador")){
             estaEnPiso=true;
-        }else{
+        }else if(!other.gameObject.CompareTag("helicoptero")){
+            estaEnPiso=true;
+        }*/
+        else{
             estaEnPiso = false;
         }
-        //estaEnPiso = true;
 
     }
 

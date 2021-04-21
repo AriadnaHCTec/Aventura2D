@@ -12,6 +12,7 @@ TagManager:
   - pisoGeneral
   - IngenieroAnimacion
   - fantasma
+  - helicoptero
   layers:
   - Default
   - TransparentFX
