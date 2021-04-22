@@ -33,11 +33,17 @@ public class CambiaAnimacion : MonoBehaviour
 
         anim.SetFloat(name:"velocidad", velocidad);
 
-
         if(rb2D.velocity.x < 0){
             sprRenderer.flipX = false;
-        }else if(rb2D.velocity.x > 0){
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if(rb2D.velocity.x > 0){
             sprRenderer.flipX = true;
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(1).gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
         //Verificar si el personaje esta saltando
