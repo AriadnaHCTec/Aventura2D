@@ -8,6 +8,7 @@ public class VerificarPlaticaMama2 : MonoBehaviour
     public GameObject colliderPlatica;
 
     void Start(){
+        /*
         int platicaIngeniero = PlayerPrefs.GetInt("platicaConIngeniero");
         int platica = PlayerPrefs.GetInt("platicaConMama2");
         if(platicaIngeniero!=1){
@@ -15,6 +16,7 @@ public class VerificarPlaticaMama2 : MonoBehaviour
         }else if(platica==1){
             barreraSalir.SetActive(false);
             colliderPlatica.SetActive(false);
-        }   
+        } 
+        */  
     }
 }

@@ -37,7 +37,7 @@ public class Elevador : MonoBehaviour
                 if(currentSceneName == "Refugio"){
                     SceneManager.LoadScene("Refugio2");
                 }else{
-                    PlayerPrefs.SetInt("platicaIngeniero",1);
+                    //PlayerPrefs.SetInt("platicaIngeniero",1);
                     SceneManager.LoadScene("Refugio3");
                     
                 }

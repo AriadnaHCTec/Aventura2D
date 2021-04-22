@@ -4,21 +4,18 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Dialogo2Refugio2 : MonoBehaviour
+public class DialogoJungla : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
+public TextMeshProUGUI textDisplay;
     public string[] sentences;
     private int index;
     public float typingSpeed;
     public GameObject panel;//
     public GameObject continueButton;
-    public GameObject barreraControl; //barrera que prohibe que salga del cuarto hasta que acabe la platica
+    public GameObject colliderPlatica;//Collider que activa la platica con Kathleen//se declara para destruirlo
+    public GameObject helicoptero;
 
-
-    void Start(){
-        PlayerPrefs.DeleteAll();
-
-
+    void Start() {
         //Time.timeScale = 0;
         StartCoroutine(Type());
     }
@@ -46,11 +43,11 @@ public class Dialogo2Refugio2 : MonoBehaviour
             StartCoroutine(Type());
         }else{
             textDisplay.text = "";
+            //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
-            Destroy(barreraControl,0.5f);//BarreraCuartoDeIngeniero
-            //PlayerPrefs.SetInt("platicaConIngeniero",1);
-            //PlayerPrefs.Save();
+            Destroy(colliderPlatica, 0.5f);
+            helicoptero.SetActive(true);
         }
     }
 }

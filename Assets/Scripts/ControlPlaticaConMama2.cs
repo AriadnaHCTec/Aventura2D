@@ -15,10 +15,11 @@ public class ControlPlaticaConMama2 : MonoBehaviour
             DialogManager.SetActive(true);
             Destroy(barreraSalir,0.1f);
             //barreraSalir.SetActive(false);
-            PlayerPrefs.SetInt("platicaConMama2",1);
+            /*PlayerPrefs.SetInt("platicaConMama2",1);
             PlayerPrefs.Save();
             PlayerPrefs.SetInt("platicaConIngeniero",1);
             PlayerPrefs.Save();
+            */
         }
     }
 }
