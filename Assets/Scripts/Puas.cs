@@ -6,39 +6,50 @@ using UnityEngine.SceneManagement;
 
 public class Puas : MonoBehaviour
 {
-    public int nivel;
     // Start is called before the first frame update
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")){
             //Descontar vistas
+            SaludPersonaje.instance.RestarVida();
             SaludPersonaje.instance.vidas--;
 
             //Actualizar los corazones
             HUD.instance.ActualizarVidas();
+
             if(SaludPersonaje.instance.vidas==0){
-                var currentScene = SceneManager.GetActiveScene();
-                var currentSceneName = currentScene.name;
-                if(currentSceneName=="Refugio3"){
-                    nivel = 1;
-                }else if(currentSceneName=="Edificio1"){
-                    nivel = 2;
-                }else if(currentSceneName=="Jungla"){
-                    nivel = 3;
-                }else if(currentSceneName=="Cueva 1"){
-                    nivel = 4;
-                }
-                PlayerPrefs.SetInt("nivel",nivel);
-                
+                SaludPersonaje.instance.PersonajeMuere(NivelActual());
+
+
+                //PlayerPrefs.SetInt("nivel",nivel);
                 //Almacenar en preferencias las monedas recolectadas hasta el momento
-                PlayerPrefs.SetInt("numeroMonedas",SaludPersonaje.instance.monedas);
+                //PlayerPrefs.SetInt("numeroMonedas",SaludPersonaje.instance.monedas);
                 //hasta que termine la aplicacion se guardan los valores
-                PlayerPrefs.Save();//Guardar preferencias
+                //PlayerPrefs.Save();//Guardar preferencias
 
                 //efectoMuere.Play();
                 Destroy(other.gameObject, 1.0f);
                 //SceneManager.LoadScene("EscenaMenu");//Pierde regresa al menu
             }        
+        }
+    }
+
+
+    public int NivelActual(){
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+        if(currentSceneName=="Refugio3"){
+            return 1;
+        }else if(currentSceneName=="Edificio1"){
+            return 2;
+        }else if(currentSceneName=="Jungla"){
+            return 3;
+        }else if(currentSceneName=="Cueva 1"){
+            return 4;
+        }else if(currentSceneName=="Edificio2"){
+            return 5;
+        }else{
+            return 0;
         }
     }
 }

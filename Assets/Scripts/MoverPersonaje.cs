@@ -50,7 +50,7 @@ public class MoverPersonaje : MonoBehaviour
                 //GameObject nuevo = Instantiate(proyectil);
                 rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
                 estaAnimacion = true;
-                GetComponent<SpriteRenderer>().enabled = false;
+                //GetComponent<SpriteRenderer>().enabled = false;
                 //rigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
                 // Prender la explosión
                 // moneda.transform.hijo del transform(transform de la explosion).explosion.Se hace activa
