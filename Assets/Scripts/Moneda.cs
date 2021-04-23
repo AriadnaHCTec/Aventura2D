@@ -26,7 +26,6 @@ public class Moneda : MonoBehaviour
 
             Destroy(gameObject, 0.5f);
             SaludPersonaje.instance.AumentarMonedas();
-            SaludPersonaje.instance.RestarVida();
             //SaludPersonaje.instance.monedas += 25;
             //SaludPersonaje.instance.GuardarInfo();
             HUD.instance.ActualizarMonedas();

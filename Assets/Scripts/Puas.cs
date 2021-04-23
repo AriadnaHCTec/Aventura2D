@@ -2,7 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-/*Sarahi Armenta */
+
+/*
+    Detecta cuando las puas colisionan con el personaje
+    y le resta vida al personaje. Cuando muere el
+    personaje, activa la animacion de morir;
+    Gurada las monedas y vidas;
+
+    Autor: Miguel Ángel Pérez López
+*/
 
 public class Puas : MonoBehaviour
 {
@@ -12,12 +20,11 @@ public class Puas : MonoBehaviour
         if (other.gameObject.CompareTag("Player")){
             //Descontar vistas
             SaludPersonaje.instance.RestarVida();
-            SaludPersonaje.instance.vidas--;
-
+            //SaludPersonaje.instance.vidas--;
             //Actualizar los corazones
             HUD.instance.ActualizarVidas();
 
-            if(SaludPersonaje.instance.vidas==0){
+            if(SaludPersonaje.instance.vidas<=0){
                 SaludPersonaje.instance.PersonajeMuere(NivelActual());
 
 
@@ -28,7 +35,7 @@ public class Puas : MonoBehaviour
                 //PlayerPrefs.Save();//Guardar preferencias
 
                 //efectoMuere.Play();
-                Destroy(other.gameObject, 1.0f);
+                //Destroy(other.gameObject, 1.0f);
                 //SceneManager.LoadScene("EscenaMenu");//Pierde regresa al menu
             }        
         }

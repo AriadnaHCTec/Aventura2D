@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+    Detecta cuando los enemigos colisionan con el personaje
+    y le resta vida al personaje. Cuando muere el
+    personaje, activa la animacion de morir;
+    Gurada las monedas y vidas;
+
+    Autor: Miguel Ángel Pérez López
+*/
+
 public class Enemigo : MonoBehaviour
 {
     public int nivel;
@@ -11,33 +20,44 @@ public class Enemigo : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")){
             //Descontar vistas
-            SaludPersonaje.instance.vidas--;
-
+            SaludPersonaje.instance.RestarVida();
+            //SaludPersonaje.instance.vidas--;
             //Actualizar los corazones
             HUD.instance.ActualizarVidas();
-            if(SaludPersonaje.instance.vidas==0){
-                var currentScene = SceneManager.GetActiveScene();
-                var currentSceneName = currentScene.name;
-                if(currentSceneName=="Refugio3"){
-                    nivel = 1;
-                }else if(currentSceneName=="Edificio1"){
-                    nivel = 2;
-                }else if(currentSceneName=="Jungla"){
-                    nivel = 3;
-                }else if(currentSceneName=="Cueva 1"){
-                    nivel = 4;
-                }
-                PlayerPrefs.SetInt("nivel",nivel);
 
+            if(SaludPersonaje.instance.vidas<=0){
+                SaludPersonaje.instance.PersonajeMuere(NivelActual());
+
+
+                //PlayerPrefs.SetInt("nivel",nivel);
                 //Almacenar en preferencias las monedas recolectadas hasta el momento
-                PlayerPrefs.SetInt("numeroMonedas",SaludPersonaje.instance.monedas);
+                //PlayerPrefs.SetInt("numeroMonedas",SaludPersonaje.instance.monedas);
                 //hasta que termine la aplicacion se guardan los valores
-                PlayerPrefs.Save();//Guardar preferencias
+                //PlayerPrefs.Save();//Guardar preferencias
 
                 //efectoMuere.Play();
-                Destroy(other.gameObject, 1.0f);
+                //Destroy(other.gameObject, 1.0f);
                 //SceneManager.LoadScene("EscenaMenu");//Pierde regresa al menu
             }        
+        }
+    }
+
+
+    public int NivelActual(){
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+        if(currentSceneName=="Refugio3"){
+            return 1;
+        }else if(currentSceneName=="Edificio1"){
+            return 2;
+        }else if(currentSceneName=="Jungla"){
+            return 3;
+        }else if(currentSceneName=="Cueva 1"){
+            return 4;
+        }else if(currentSceneName=="Edificio2"){
+            return 5;
+        }else{
+            return 0;
         }
     }
 }

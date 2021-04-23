@@ -21,22 +21,34 @@ public class HUD : MonoBehaviour
 
     private void Start(){
         //Leer el valor desde las preferencias
-        int numeroMonedas = PlayerPrefs.GetInt("numeroMonedas",0);
+        //int numeroMonedas = PlayerPrefs.GetInt("numeroMonedas",0);
         SaludPersonaje.instance.CargarInfo();
         textoMonedas.text = SaludPersonaje.instance.monedas.ToString();
-        SaludPersonaje.instance.monedas = numeroMonedas;
+        //SaludPersonaje.instance.monedas = numeroMonedas;
+        ActualizarVidas();        
     }
 
 
     public void ActualizarVidas(){
         int vidas = SaludPersonaje.instance.RegresarVidas();
-        if(vidas == 3){
+        if(vidas == 4){
+            imagen1.enabled = true;
+            imagen2.enabled = true;
+            imagen3.enabled = true;
+            imagen4.enabled = true;
+        }else if(vidas == 3){
             imagen4.enabled = false;
         }else if(vidas == 2){
+            imagen4.enabled = false;
             imagen3.enabled = false;
         }else if(vidas == 1){
+            imagen4.enabled = false;
+            imagen3.enabled = false;
             imagen2.enabled = false;
         }else if(vidas == 0){
+            imagen4.enabled = false;
+            imagen3.enabled = false;
+            imagen2.enabled = false;
             imagen1.enabled = false;
         }
     }
