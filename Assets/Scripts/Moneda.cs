@@ -25,6 +25,7 @@ public class Moneda : MonoBehaviour
             //gameObject.transform.GetChild(0).gameObject.SetActive(true);
 
             Destroy(gameObject, 0.5f);
+            SaludPersonaje.instance.AumentarMonedasTemporales();
             SaludPersonaje.instance.AumentarMonedas();
             //SaludPersonaje.instance.monedas += 25;
             //SaludPersonaje.instance.GuardarInfo();

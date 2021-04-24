@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8370765518245046245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896916700197239178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0778473715386fb409f133caab5fec96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1128724869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -121,6 +109,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de72bc25fa800ee47967bce0a599c81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &260210266422006176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896916700197239178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0778473715386fb409f133caab5fec96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8370765517007434528
@@ -302,6 +302,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2039862199839586635, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
+      propertyPath: collider2D
+      value: 
+      objectReference: {fileID: 635487224034741573}
     - target: {fileID: 5368913829053383252, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -420,5 +424,10 @@ GameObject:
 --- !u!4 &1896916700197239177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5368913829053383253, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
+  m_PrefabInstance: {fileID: 5823441422957411292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &635487224034741573 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6341263291251701401, guid: 164371263a8e2454d82b1140f74e83ce, type: 3}
   m_PrefabInstance: {fileID: 5823441422957411292}
   m_PrefabAsset: {fileID: 0}

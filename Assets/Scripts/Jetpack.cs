@@ -30,6 +30,10 @@ public class Jetpack : MonoBehaviour
     void Update(){
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
+                //Mantener las monedas temporales del nivel porque el jugador 
+                //paso de nivel y tiene derecho a conservar las monedas temporales
+                SaludPersonaje.instance.ConservarMonedasTemporales();
+                
                 var currentScene = SceneManager.GetActiveScene();
                 var currentSceneName = currentScene.name;
                 SceneManager.LoadScene("Edificio2");
