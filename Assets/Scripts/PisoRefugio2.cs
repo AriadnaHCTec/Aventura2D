@@ -15,6 +15,7 @@ public class PisoRefugio2 : MonoBehaviour
 {
     public GameObject CanvasDialogo;
     public GameObject DialogManager;
+    public GameObject elevador;
 
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("Player")){

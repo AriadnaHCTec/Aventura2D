@@ -9,15 +9,18 @@ using UnityEngine;
  */
 public class Moneda : MonoBehaviour
 {
-    
+    //referencia al audio source
+    public AudioSource sonidoMoneda;
+ 
+ 
     // La moneda colision� con otro objeto (colliders)
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            // Recolectar
             // Reproducir un efecto de sonido
-   
+            sonidoMoneda.Play();
+
             // Dejar de dibujar a moneda
             GetComponent<SpriteRenderer>().enabled = false;
             // Prender la explosi�n

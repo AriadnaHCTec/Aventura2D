@@ -15,17 +15,25 @@ using UnityEngine.SceneManagement;
 public class Enemigo : MonoBehaviour
 {
     public int nivel;
+    public AudioSource sonidoHerido;
+    public AudioSource sonidoMuere;
+
+
     // Start is called before the first frame update
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")){
+            //Sonido daño
+            sonidoHerido.Play();
+            
             //Descontar vistas
             SaludPersonaje.instance.RestarVida();
-            //SaludPersonaje.instance.vidas--;
+            
             //Actualizar los corazones
             HUD.instance.ActualizarVidas();
 
             if(SaludPersonaje.instance.vidas<=0){
+                sonidoMuere.Play();
                 SaludPersonaje.instance.PersonajeMuere(NivelActual());
                 //HUD.instance.ActualizarVidas();
 

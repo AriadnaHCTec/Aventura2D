@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class EdificioTecnologico : MonoBehaviour
 {
     public static bool validar;
-    public GameObject jugador;
     public GameObject pantallaInformativa;
     
     private void OnTriggerEnter2D(Collider2D other){
@@ -32,6 +31,9 @@ public class EdificioTecnologico : MonoBehaviour
             pantallaInformativa.SetActive(validar);
 
             if(Input.GetKeyDown(KeyCode.E)){
+                //Mantener las monedas temporales del nivel porque el jugador 
+                //paso de nivel y tiene derecho a conservar las monedas temporales
+                SaludPersonaje.instance.ConservarMonedasTemporales();
                 SceneManager.LoadScene("Edificio1");
             }  
         } 
