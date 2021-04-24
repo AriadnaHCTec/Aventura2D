@@ -21,7 +21,7 @@ public class SaludPersonaje : MonoBehaviour
     public BoxCollider2D collider2D;//desactivar para que no le bajen más vidas al jugador cuando muere
     DateTime tiempoInicio;
     DateTime tiempoFinal;
-    TimeSpan tiempoTotal;
+    public string tiempoTotal;
 
 
     private void Awake(){
@@ -85,7 +85,8 @@ public class SaludPersonaje : MonoBehaviour
         nivel = nivell;
 
         tiempoFinal = DateTime.Now;
-        tiempoTotal = tiempoFinal.Subtract ( tiempoInicio );
+        TimeSpan span = tiempoFinal.Subtract ( tiempoInicio );
+        tiempoTotal = span.Hours + ":" + span.Minutes;
 
         rigidbody = GetComponent<Rigidbody2D>();
         collider2D.enabled = false;
