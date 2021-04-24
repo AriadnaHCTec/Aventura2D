@@ -1,0 +1,24 @@
+{
+	"nivel":[
+		{
+			"pregunta":"P1",
+			"r1":"a",
+			"r2":"b",
+			"r3":"c",
+			"indice":2
+		},
+		{"pregunta":"P2",
+        "r1":"aa",
+        "r2":"bb",
+        "r3":"cc",
+        "indice":1
+		},
+		{"pregunta":"P3",
+        "r1":"aaa",
+        "r2":"bbb",
+        "r3":"ccc",
+        "indice":3
+		}
+
+	]
+}
