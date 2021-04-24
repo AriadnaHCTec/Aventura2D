@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SaludPersonaje : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class SaludPersonaje : MonoBehaviour
     public static SaludPersonaje instance;
     private Rigidbody2D rigidbody;//animacion muerto
     public BoxCollider2D collider2D;//desactivar para que no le bajen más vidas al jugador cuando muere
+    DateTime tiempoInicio;
+    DateTime tiempoFinal;
+    TimeSpan tiempoTotal;
 
 
     private void Awake(){
@@ -79,6 +84,9 @@ public class SaludPersonaje : MonoBehaviour
         monedasPorNivel = 0;
         nivel = nivell;
 
+        tiempoFinal = DateTime.Now;
+        tiempoTotal = tiempoFinal.Subtract ( tiempoInicio );
+
         rigidbody = GetComponent<Rigidbody2D>();
         collider2D.enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
@@ -105,6 +113,7 @@ public class SaludPersonaje : MonoBehaviour
 
 
     public void CargarNivelActual(){
+        tiempoInicio = DateTime.Now;
         int nivell = SaludPersonaje.instance.RegresarNivel();
         if(nivell == 1){
             SceneManager.LoadScene("Refugio3");
