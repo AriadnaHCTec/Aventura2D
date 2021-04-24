@@ -36,7 +36,7 @@ public class Preguntas : MonoBehaviour
     void Start()
     {
         niveles = JsonUtility.FromJson<Nivel>(textJson.text);
-        pregunta.text = niveles.preguntas.ToString();
+        //pregunta.text = niveles.preguntas.ToString();
     }    
 
     
