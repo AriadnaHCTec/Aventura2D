@@ -42,40 +42,44 @@ public class Preguntas : MonoBehaviour
         res3.text = niveles.nivel[0].r3.ToString();
     }
 
-    public void Respondio1()
+    public void Respondio1(int val)
     {
-        if (niveles.nivel[0].r1 == "0")
+        
+        switch (val)
         {
-            print("Correctisimo bichota");
+            case 0:
+                if (niveles.nivel[0].indice == 0)
+                {
+                    print("Correctisimo bichota");
+                }
+                else
+                {
+                    print("nou");
+                }
+                break;
+            case 1:
+                if (niveles.nivel[0].indice == 1)
+                {
+                    print("Correctisimo bichota");
+                }
+                else
+                {
+                    print("nou");
+                }
+                break;
+            case 2:
+                if (niveles.nivel[0].indice == 2)
+                {
+                    print("Correctisimo bichota");
+                }
+                else
+                {
+                    print("nou");
+                }
+                break;
         }
-        else
-        {
-            print("nou");
-        }
+        
     }
 
-    public void Respondio2()
-    {
-        if (niveles.nivel[0].r2 == "1")
-        {
-            print("Correctisimo bichota");
-        }
-        else
-        {
-            print("nou");
-        }
-    }
-
-    public void Respondio3()
-    {
-        if (niveles.nivel[0].r3 == "2")
-        {
-            print("Correctisimo bichota");
-        }
-        else
-        {
-            print("nou");
-        }
-    }
 
 }
