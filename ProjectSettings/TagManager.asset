@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Enemigo
   - piso
+  - SueloIngeniero
+  - elevador
+  - ControlPlaticaLibros
+  - IngenieroAnimacion
+  - Moneda
+  - martillo
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ public class HUD : MonoBehaviour
     public Image imagen3;
     public Image imagen4;
     public Text textoMonedas;
+    public Text textoMonedasComprobacion;
 
     public static HUD instance;
 
@@ -30,7 +31,12 @@ public class HUD : MonoBehaviour
 
 
     public void ActualizarVidas(){
+        //SaludPersonaje.instance.CargarInfo();
+        textoMonedasComprobacion.text = SaludPersonaje.instance.vidas.ToString();
         int vidas = SaludPersonaje.instance.RegresarVidas();
+        if(vidas >= 5){
+            vidas = 4;
+        }
         if(vidas == 4){
             imagen1.enabled = true;
             imagen2.enabled = true;

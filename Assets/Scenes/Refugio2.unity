@@ -627,7 +627,6 @@ GameObject:
   - component: {fileID: 175873469}
   - component: {fileID: 175873468}
   - component: {fileID: 175873471}
-  - component: {fileID: 175873472}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -717,22 +716,6 @@ MonoBehaviour:
   limiteIY: -10
   limiteX: 25
   limiteY: 5
---- !u!114 &175873472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175873467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6fa6c24b62bea42b8fe4ced90ed508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IngenieroAnimacion: {fileID: 2036019875}
-  IngenieroImagen: {fileID: 1409305549}
-  colliderPlatica: {fileID: 2060550796}
-  elevador: {fileID: 0}
 --- !u!1 &185666243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,7 +4088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1161763850
 AudioSource:
   m_ObjectHideFlags: 0

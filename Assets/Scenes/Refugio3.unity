@@ -1242,7 +1242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee562dc9dbdc5f419485c06f3ed47b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 0}
   pantallaInformativa: {fileID: 1675794861}
 --- !u!114 &424127995
 MonoBehaviour:
@@ -1400,7 +1399,6 @@ GameObject:
   m_Component:
   - component: {fileID: 473624871}
   - component: {fileID: 473624870}
-  - component: {fileID: 473624872}
   m_Layer: 0
   m_Name: MusicaFondo
   m_TagString: Untagged
@@ -1518,20 +1516,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &473624872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473624869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4b0d83f2c91924d8791ab41f4ccc00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barreraSalir: {fileID: 792339715}
-  colliderPlatica: {fileID: 1509849398}
 --- !u!1 &489551772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,7 +1854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee562dc9dbdc5f419485c06f3ed47b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 0}
   pantallaInformativa: {fileID: 1675794861}
 --- !u!212 &670858508
 SpriteRenderer:

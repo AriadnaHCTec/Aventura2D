@@ -19,9 +19,11 @@ public class SaludPersonaje : MonoBehaviour
     public static SaludPersonaje instance;
     private Rigidbody2D rigidbody;//animacion muerto
     public BoxCollider2D collider2D;//desactivar para que no le bajen más vidas al jugador cuando muere
-    DateTime tiempoInicio;
-    DateTime tiempoFinal;
+    public DateTime tiempoInicio;
+    public DateTime tiempoFinal;
     public string tiempoTotal;
+    public AudioSource sonidoHerido;
+    public AudioSource sonidoMuere;
 
 
     private void Awake(){
@@ -44,6 +46,9 @@ public class SaludPersonaje : MonoBehaviour
         preguntasCorrectasJungla = data.preguntasCorrectasJungla;
         preguntasCorrectasCueva = data.preguntasCorrectasCueva;
         preguntasCorrectasEdif2 = data.preguntasCorrectasEdif1;
+        tiempoInicio = data.tiempoInicio;
+        tiempoFinal = data.tiempoFinal;
+        tiempoTotal = data.tiempoTotal;
     }    
 
 
@@ -73,9 +78,19 @@ public class SaludPersonaje : MonoBehaviour
 
     public void RestarVida(){
         CargarInfo();
+        sonidoHerido.Play();
         vidas -= 1;
         GuardarInfo();
     }
+
+    /*
+    public void MatarUnEnemigo(){
+        //Metodo que le regresa una vida al jugador porque es imposible
+        // matar a un enemigo sin perder una vida por acerarse
+        CargarInfo();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        vidas += 1;
+        GuardarInfo();
+    }*/
 
 
     public void PersonajeMuere(int nivell){
@@ -88,6 +103,8 @@ public class SaludPersonaje : MonoBehaviour
         TimeSpan span = tiempoFinal.Subtract ( tiempoInicio );
         tiempoTotal = span.Hours + ":" + span.Minutes;
 
+        sonidoMuere.Play();
+
         rigidbody = GetComponent<Rigidbody2D>();
         collider2D.enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
@@ -97,12 +114,15 @@ public class SaludPersonaje : MonoBehaviour
         GuardarInfo();
 
         //Destroy(gameObject, 0.5f);
-        Invoke("CargarNivelActual", 2.0f);
+        Invoke("CargarNivelActual", 1.5f);
     }
 
 
     public int RegresarVidas(){
         CargarInfo();
+        if(vidas >= 5){
+            return 4;
+        }
         return vidas;
     }
 

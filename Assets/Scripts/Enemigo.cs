@@ -22,9 +22,15 @@ public class Enemigo : MonoBehaviour
     // Start is called before the first frame update
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")){
+        if(other.gameObject.CompareTag("martillo")){
+            if(SaludPersonaje.instance.vidas<=0){
+                //sonidoMuere.Play();
+                SaludPersonaje.instance.PersonajeMuere(NivelActual());
+            }
+            Destroy(gameObject, 0.5f);
+        }else if (other.gameObject.CompareTag("Player")){
             //Sonido daño
-            sonidoHerido.Play();
+            //sonidoHerido.Play();
             
             //Descontar vistas
             SaludPersonaje.instance.RestarVida();
@@ -33,7 +39,7 @@ public class Enemigo : MonoBehaviour
             HUD.instance.ActualizarVidas();
 
             if(SaludPersonaje.instance.vidas<=0){
-                sonidoMuere.Play();
+                //sonidoMuere.Play();
                 SaludPersonaje.instance.PersonajeMuere(NivelActual());
                 //HUD.instance.ActualizarVidas();
 
@@ -46,7 +52,7 @@ public class Enemigo : MonoBehaviour
                 //efectoMuere.Play();
                 //Destroy(other.gameObject, 1.0f);
                 //SceneManager.LoadScene("EscenaMenu");//Pierde regresa al menu
-            }        
+            }     
         }
     }
 

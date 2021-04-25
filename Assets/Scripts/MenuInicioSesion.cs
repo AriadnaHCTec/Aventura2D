@@ -56,7 +56,7 @@ public class MenuInicioSesion : MonoBehaviour
         }
         else
         {
-            resultado.text = "Error de inicio de sesi�n: " + request.responseCode.ToString();
+            resultado.text = "Error de inicio de sesion: " + request.responseCode.ToString();
         }
     }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,10 @@ public class Personaje
     public int preguntasCorrectasCueva;
     public int preguntasCorrectasEdif2;
     public int preguntasCorrectasTotal;
+    public DateTime tiempoInicio;
+    public DateTime tiempoFinal;
+    public string tiempoTotal;
+
 
     public Personaje(SaludPersonaje saludPersonaje){
         vidas = saludPersonaje.vidas;
@@ -34,6 +39,9 @@ public class Personaje
         preguntasCorrectasJungla = saludPersonaje.preguntasCorrectasJungla;
         preguntasCorrectasCueva = saludPersonaje.preguntasCorrectasCueva;
         preguntasCorrectasEdif2 = saludPersonaje.preguntasCorrectasEdif2;
+        tiempoInicio = saludPersonaje.tiempoInicio;
+        tiempoFinal = saludPersonaje.tiempoFinal;
+        tiempoTotal = saludPersonaje.tiempoTotal;
     }
 
 }
