@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461755841953714881}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8605689990195563993}
+        m_TargetAssemblyTypeName: Preguntas, Assembly-CSharp
+        m_MethodName: Respondio2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1461755842079178204
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +253,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461755842079178201}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8605689990195563993}
+        m_TargetAssemblyTypeName: Preguntas, Assembly-CSharp
+        m_MethodName: Respondio3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1461755842410981285
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1461755842844011852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8605689990195563993}
+        m_TargetAssemblyTypeName: Preguntas, Assembly-CSharp
+        m_MethodName: Respondio1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1461755842933445930
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,8 +569,9 @@ GameObject:
   - component: {fileID: 1461755842933445975}
   - component: {fileID: 1461755842933445972}
   - component: {fileID: 1461755842933445973}
+  - component: {fileID: 8605689990195563993}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Preguntas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,6 +661,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8605689990195563993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461755842933445930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea3905e72586d9c4fb26371af4e771b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pregunta: {fileID: 1461755843441394865}
+  res1: {fileID: 1461755842425170598}
+  res2: {fileID: 1461755843887592595}
+  res3: {fileID: 1461755842410981287}
+  textJson: {fileID: 4900000, guid: 207b71bb91947f143bf3bee9ff314aac, type: 3}
+  niveles:
+    nivel: []
 --- !u!1 &1461755843175316067
 GameObject:
   m_ObjectHideFlags: 0
