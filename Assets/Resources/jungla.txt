@@ -1,0 +1,30 @@
+{
+	"jungla":[
+		{
+			"pregunta":"Selecciona la respuesta, ¿Que es una raíz?",
+			"r1":"son cada una de las identidades que están conectadas con otras por el signo de igualdad",
+			"r2":"son los valores de las incógnitas que satisfacen la ecuación",
+			"r3":" son los valores que determinan el grado de una ecuación ",
+			"indice":2
+		},
+		{"pregunta":"Desarrolla (x-5)^2(producto notable)",
+        "r1":"x^2-10x+25",
+        "r2":"5x^2-10x+25",
+        "r3":"10x^2-5x+25",
+        "indice":0
+		},
+		{"pregunta":" Factoriza este trinomio cuadrado perfecto 4x^2-20xy+25y^2",
+        "r1":"(4x-10y)^2",
+        "r2":"(4x-5y)^2",
+        "r3":"(2x-5y)^2",
+        "indice":2
+		}
+		{"pregunta":"De las siguientes leyes de signos, cual es la que está mal?",
+        "r1":"+ entre  -   =  -",
+        "r2":"+ entre  +   =  -",
+        "r3":"- entre  -   =  +",
+        "indice":1
+		}
+
+	]
+}
