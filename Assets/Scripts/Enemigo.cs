@@ -42,7 +42,7 @@ public class Enemigo : MonoBehaviour
                 //sonidoMuere.Play();
                 SaludPersonaje.instance.PersonajeMuere(NivelActual());
                 //HUD.instance.ActualizarVidas();
-
+                
                 //PlayerPrefs.SetInt("nivel",nivel);
                 //Almacenar en preferencias las monedas recolectadas hasta el momento
                 //PlayerPrefs.SetInt("numeroMonedas",SaludPersonaje.instance.monedas);

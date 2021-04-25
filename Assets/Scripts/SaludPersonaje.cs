@@ -16,6 +16,7 @@ public class SaludPersonaje : MonoBehaviour
     public int preguntasCorrectasJungla=0;
     public int preguntasCorrectasCueva=0;
     public int preguntasCorrectasEdif2=0;
+    public int intentoPreguntas = 0;
     public static SaludPersonaje instance;
     private Rigidbody2D rigidbody;//animacion muerto
     public BoxCollider2D collider2D;//desactivar para que no le bajen más vidas al jugador cuando muere
@@ -24,6 +25,7 @@ public class SaludPersonaje : MonoBehaviour
     public string tiempoTotal;
     public AudioSource sonidoHerido;
     public AudioSource sonidoMuere;
+    public int acaboNivel = 0;//valor que se guardara en base de datos para confirmar que el jugador acabo el juego
 
 
     private void Awake(){
@@ -46,6 +48,7 @@ public class SaludPersonaje : MonoBehaviour
         preguntasCorrectasJungla = data.preguntasCorrectasJungla;
         preguntasCorrectasCueva = data.preguntasCorrectasCueva;
         preguntasCorrectasEdif2 = data.preguntasCorrectasEdif1;
+        intentoPreguntas = data.intentoPreguntas;
         tiempoInicio = data.tiempoInicio;
         tiempoFinal = data.tiempoFinal;
         tiempoTotal = data.tiempoTotal;
@@ -112,6 +115,8 @@ public class SaludPersonaje : MonoBehaviour
         gameObject.transform.GetChild(2).gameObject.SetActive(true);          
         vidas = 4;
         GuardarInfo();
+
+        EnviarDatos.instance.EscribirJson();
 
         //Destroy(gameObject, 0.5f);
         Invoke("CargarNivelActual", 1.5f);

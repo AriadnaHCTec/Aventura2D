@@ -24,6 +24,7 @@ public class Personaje
     public int preguntasCorrectasCueva;
     public int preguntasCorrectasEdif2;
     public int preguntasCorrectasTotal;
+    public int intentoPreguntas;
     public DateTime tiempoInicio;
     public DateTime tiempoFinal;
     public string tiempoTotal;
@@ -39,6 +40,7 @@ public class Personaje
         preguntasCorrectasJungla = saludPersonaje.preguntasCorrectasJungla;
         preguntasCorrectasCueva = saludPersonaje.preguntasCorrectasCueva;
         preguntasCorrectasEdif2 = saludPersonaje.preguntasCorrectasEdif2;
+        intentoPreguntas = saludPersonaje.intentoPreguntas;
         tiempoInicio = saludPersonaje.tiempoInicio;
         tiempoFinal = saludPersonaje.tiempoFinal;
         tiempoTotal = saludPersonaje.tiempoTotal;
