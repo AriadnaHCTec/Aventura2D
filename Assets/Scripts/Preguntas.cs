@@ -16,6 +16,8 @@ public class Preguntas : MonoBehaviour
     public Text res2;
     public Text res3;
     public TextAsset textJson;
+    public GameObject CanvasPregunta;
+    private int indice=0;
     [System.Serializable]
 
     public class Pregunta
@@ -38,35 +40,47 @@ public class Preguntas : MonoBehaviour
         instance = this;
     }
 
-    /*void Start()
+    void Start()
     {
         niveles = JsonUtility.FromJson<Nivel>(textJson.text);
         pregunta.text = niveles.nivel[0].pregunta.ToString();
         res1.text = niveles.nivel[0].r1.ToString();
         res2.text = niveles.nivel[0].r2.ToString();
         res3.text = niveles.nivel[0].r3.ToString();
-    }*/
+    }
     
-    public void ActualizarCanvas(int indice)
+    public void SiguientePregunta()
     {
-        niveles = JsonUtility.FromJson<Nivel>(textJson.text);
-        pregunta.text = niveles.nivel[indice].pregunta.ToString();
-        res1.text = niveles.nivel[indice].r1.ToString();
-        res2.text = niveles.nivel[indice].r2.ToString();
-        res3.text = niveles.nivel[indice].r3.ToString();
+        if (++indice < 3)
+        {
+            niveles = JsonUtility.FromJson<Nivel>(textJson.text);
+            pregunta.text = niveles.nivel[indice].pregunta.ToString();
+            res1.text = niveles.nivel[indice].r1.ToString();
+            res2.text = niveles.nivel[indice].r2.ToString();
+            res3.text = niveles.nivel[indice].r3.ToString();
+        }
+        else
+        {
+            Destroy(CanvasPregunta);
+        }                
     }
 
     public void Respondio1(int val)
     {
+        if (indice < 3)
+        {
+            if (niveles.nivel[indice].indice == val)
+            {
+                print("Correctisimo bichota");
+                SaludPersonaje.instance.AumentarMonedasTemporales();
+                SaludPersonaje.instance.AumentarMonedas();
+            }
+            else
+            {
+                print("nou");
+            }
+        }   
         
-        if(niveles.nivel[0].indice == val)
-        {
-            print("Correctisimo bichota");
-        }
-        else
-        {
-            print("nou");
-        }        
     }
 
 
