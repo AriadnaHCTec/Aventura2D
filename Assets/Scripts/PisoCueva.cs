@@ -4,14 +4,12 @@ using UnityEngine;
 
 /*
 Codigo que detecta coliders para activar platica
-con Mama y platica con ingeniero.
-Codigo que detecta una colision con jugador y activa
-el dialogo entre Kathleen y el jugador
+con Kathleen.
 
 Autor: Miguel Ángel Pérez López
 */
 
-public class PisoRefugio2 : MonoBehaviour
+public class PisoCueva : MonoBehaviour
 {
     public GameObject CanvasDialogo;
     public GameObject DialogManager;

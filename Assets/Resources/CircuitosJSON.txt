@@ -1,0 +1,29 @@
+{
+	"nivel":[
+		{
+			"pregunta":"Calcula la intensidad de la corriente que alimenta a una lavadora de juguete que tiene una resistencia de 40 ohmios y funciona con una batería con una diferencia de potencial de 30 V",
+			"r1":"0.75A",
+			"r2":"1.33A",
+			"r3":"1200A",
+			"indice":1
+		},
+		{"pregunta":"Calcula el voltaje, entre dos puntos del circuito de una plancha, por el que atraviesa una corriente de 5 amperios y presenta una resistencia de 20 ohmios",
+        "r1":"0.25V",
+        "r2":"4V",
+        "r3":"100V",
+        "indice":2
+		},
+		{"pregunta":"Calcula la resistencia atravesada por una corriente con una intensidad de 8 amperios y una diferencia de potencial de 14 voltios.",
+        "r1":"1.75 ohms",
+        "r2":"0.57 ohms",
+        "r3":"1.5 ohms",
+        "indice":0
+		},
+		{"pregunta":"Calcular la diferencia de potencial aplicada a una resistencia de 45 , si por ella fluyen 9 A?",
+        "r1":"5V",
+        "r2":"405V",
+        "r3":"90V",
+        "indice":1
+		}
+	]
+}

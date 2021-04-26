@@ -13,7 +13,9 @@ public TextMeshProUGUI textDisplay;
     public GameObject panel;//
     public GameObject continueButton;
     public GameObject colliderPlatica;//Collider que activa la platica con Kathleen//se declara para destruirlo
+    public GameObject panelPreguntas;
     public GameObject helicoptero;
+    
 
     void Start() {
         //Time.timeScale = 0;
@@ -47,6 +49,7 @@ public TextMeshProUGUI textDisplay;
             continueButton.SetActive(false);
             panel.SetActive(false);
             Destroy(colliderPlatica, 0.5f);
+            panelPreguntas.SetActive(true);
             helicoptero.SetActive(true);
         }
     }

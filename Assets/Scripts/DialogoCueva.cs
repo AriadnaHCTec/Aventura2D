@@ -19,6 +19,7 @@ public TextMeshProUGUI textDisplay;
     public GameObject panel;//
     public GameObject continueButton;
     public GameObject colliderPlatica;//Collider que activa la platica con Kathleen//se declara para destruirlo
+    public GameObject panelPreguntas;//panel donde el jugador debe responder varias preguntas
 
     void Start() {
         //Time.timeScale = 0;
@@ -51,6 +52,7 @@ public TextMeshProUGUI textDisplay;
             //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
+            panelPreguntas.SetActive(true);//activar panel para hacer preguntas
             Destroy(colliderPlatica, 0.5f);
             //Destroy(barreraControl,0.5f);
             //Preferencias

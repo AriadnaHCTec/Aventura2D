@@ -10,7 +10,7 @@ Ariadna Huesca
 public class Preguntas : MonoBehaviour
 {
     public static Preguntas instance;
-    //Para desplegar la información
+    //Para desplegar la informaciï¿½n
     public Text pregunta;
     public Text res1;
     public Text res2;

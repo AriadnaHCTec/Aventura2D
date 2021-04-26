@@ -6,7 +6,7 @@ public class Libro : MonoBehaviour
 {
     public bool validar;
     public GameObject panelInformativo;//panel que le dice que apriete una tecla para usar el helicoptero
-    // Start is called before the first frame update
+    public GameObject colliderPreguntas;//para eliminarlo
     
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -14,7 +14,7 @@ public class Libro : MonoBehaviour
         if (other.gameObject.CompareTag("Player")){
             validar=true;
             panelInformativo.SetActive(validar);
-
+            Destroy(colliderPreguntas,0.1f);
         }
     }
 
