@@ -9,6 +9,8 @@ Ariadna Huesca
  */
 public class Preguntas : MonoBehaviour
 {
+    public AudioSource sonidoCorrecto;
+    public AudioSource sonidoIncorrecto;
     public static Preguntas instance;
     //Para desplegar la informaci�n
     public Text pregunta;
@@ -72,16 +74,16 @@ public class Preguntas : MonoBehaviour
             if (niveles.nivel[indice].indice == val)
             {
                 print("Correctisimo bichota");
-                SaludPersonaje.instance.AumentarMonedasTemporales();
-                SaludPersonaje.instance.AumentarMonedas();
+                sonidoCorrecto.Play();
+                SaludPersonaje.instance.SumarPuntosDeNivel();
+                //SaludPersonaje.instance.AumentarMonedasTemporales();
+                //SaludPersonaje.instance.AumentarMonedas();
             }
             else
             {
+                sonidoIncorrecto.Play();
                 print("nou");
             }
         }   
-        
     }
-
-
 }

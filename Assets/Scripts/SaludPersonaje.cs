@@ -97,6 +97,25 @@ public class SaludPersonaje : MonoBehaviour
     }*/
 
 
+    public void SumarPuntosDeNivel(){
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+        CargarInfo();
+        if(currentSceneName == "Edificio1"){
+            preguntasCorrectasEdif1 += 1;
+        }else if(currentSceneName == "Jungla"){
+            preguntasCorrectasJungla += 1;
+        }else if(currentSceneName == "Cueva 1"){
+            preguntasCorrectasCueva += 1;
+        }else if(currentSceneName == "Edificio2"){
+            preguntasCorrectasEdif2 +=1;
+        }else{
+            preguntasCorrectasTotal +=1;
+        }
+        preguntasCorrectasTotal +=1;
+    }
+
+
     public void PersonajeMuere(int nivell){
         CargarInfo();
         monedas -= monedasPorNivel;
@@ -122,6 +141,15 @@ public class SaludPersonaje : MonoBehaviour
     }
 
 
+    public void SalirDelJuego(){
+        //Al salir del juego, elimina las monedas temporales
+        CargarInfo();
+        monedas -= monedasPorNivel;
+        monedasPorNivel = 0;
+        GuardarInfo();
+    }
+
+
     public int RegresarVidas(){
         CargarInfo();
         if(vidas >= 5){
@@ -142,9 +170,13 @@ public class SaludPersonaje : MonoBehaviour
         return nivel;
     }
 
+
     public void SubirInformacionPersonaje(){
+        //Restar monedas temporales del nivel
+        SalirDelJuego();
         EnviarDatos.instance.EscribirJson();
     }
+
 
     public void CargarNivelActual(){
         tiempoInicio = DateTime.Now;
@@ -159,6 +191,8 @@ public class SaludPersonaje : MonoBehaviour
             SceneManager.LoadScene("Cueva 1");
         }else if(nivell == 5){
             SceneManager.LoadScene("Edificio2");
+        }else if (nivell == 6){
+            SceneManager.LoadScene("Refugio4");
         }else{
             SceneManager.LoadScene("Refugio3");//checar este caso
         }

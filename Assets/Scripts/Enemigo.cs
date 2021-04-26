@@ -65,8 +65,10 @@ public class Enemigo : MonoBehaviour
             return 4;
         }else if(currentSceneName=="Edificio2"){
             return 5;
+        }else if(currentSceneName=="Refugio4"){
+            return 6;
         }else{
-            return 0;
+            return 1;
         }
     }
 }

@@ -53,7 +53,7 @@ public class EnviarDatos : MonoBehaviour
         datos.UsuarioUsuario = "Mike";//Menu.instance.usuarioTexto.text;
         datos.NivelNumNivel = currentSceneName;
         datos.vidas = SaludPersonaje.instance.vidas;
-        datos.preguntas = SaludPersonaje.instance.preguntasCorrectasTotal;
+        datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;
         datos.intentoPreguntas = SaludPersonaje.instance.intentoPreguntas;
         datos.puntos = SaludPersonaje.instance.monedas;
         datos.horaInicioInicioSesion = "2020-04-04";//Menu.instance.inicioSesion;

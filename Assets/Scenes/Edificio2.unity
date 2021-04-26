@@ -1626,11 +1626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.34
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.62
+      value: 33.49
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4622,6 +4622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3905e72586d9c4fb26371af4e771b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoCorrecto: {fileID: 0}
+  sonidoIncorrecto: {fileID: 0}
   pregunta: {fileID: 0}
   res1: {fileID: 0}
   res2: {fileID: 0}
