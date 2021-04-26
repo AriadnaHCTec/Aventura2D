@@ -14,18 +14,11 @@ using UnityEngine.SceneManagement;
 
 public class Puas : MonoBehaviour
 {
-
-    public AudioSource sonidoHerido;
-    public AudioSource sonidoMuere;
-
-
     // Start is called before the first frame update
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player")){
-            //Sonido daño
-            sonidoHerido.Play();
-
+            
             //Descontar vistas
             SaludPersonaje.instance.RestarVida();
             //SaludPersonaje.instance.vidas--;
@@ -33,7 +26,6 @@ public class Puas : MonoBehaviour
             HUD.instance.ActualizarVidas();
 
             if(SaludPersonaje.instance.vidas<=0){
-                sonidoMuere.Play();
                 SaludPersonaje.instance.PersonajeMuere(NivelActual());
             }        
         }

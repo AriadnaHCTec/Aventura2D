@@ -82,6 +82,7 @@ public class SaludPersonaje : MonoBehaviour
     public void RestarVida(){
         CargarInfo();
         sonidoHerido.Play();
+        vidas = RegresarVidas();
         vidas -= 1;
         GuardarInfo();
     }
@@ -116,8 +117,6 @@ public class SaludPersonaje : MonoBehaviour
         vidas = 4;
         GuardarInfo();
 
-        EnviarDatos.instance.EscribirJson();
-
         //Destroy(gameObject, 0.5f);
         Invoke("CargarNivelActual", 1.5f);
     }
@@ -126,9 +125,15 @@ public class SaludPersonaje : MonoBehaviour
     public int RegresarVidas(){
         CargarInfo();
         if(vidas >= 5){
+            vidas = 4;
             return 4;
+        }else if(vidas < 0){
+            vidas = 0;
+            return 0;
+        }else{
+            return vidas;
         }
-        return vidas;
+        
     }
 
 
@@ -137,6 +142,9 @@ public class SaludPersonaje : MonoBehaviour
         return nivel;
     }
 
+    public void SubirInformacionPersonaje(){
+        EnviarDatos.instance.EscribirJson();
+    }
 
     public void CargarNivelActual(){
         tiempoInicio = DateTime.Now;

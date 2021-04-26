@@ -31,7 +31,7 @@ public class SalirDeEdificio : MonoBehaviour
 
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
-                SceneManager.LoadScene("Refugio3");
+                SceneManager.LoadScene("Refugio4");
             }  
         }
     }
