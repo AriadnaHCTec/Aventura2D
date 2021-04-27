@@ -49,11 +49,13 @@ public class MenuInicioSesion : MonoBehaviour
                 //Guardar nombre de usuario en un txt para poder accederlo en otros códigos
                 string path = Application.persistentDataPath + "/usuario.txt";
                 System.IO.File.WriteAllText (path, usuario.text);
+                print("osiois");
                 //SceneManager.LoadScene("Refugio");                
             }
             else
             {
                 resultado.text = textoPlano;
+                print("onono");
             }
         }
         else

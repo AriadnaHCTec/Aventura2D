@@ -1,0 +1,24 @@
+{
+	"nivel":[
+		{
+			"pregunta":"¿Qué hay en el núcleo de un átomo?",
+			"r1":"Neutrinos",
+			"r2":"Protones y neutrones",
+			"r3":"Electrones",
+			"indice":1
+		},
+		{"pregunta":"¿Cuál NO es un estado de la materia?",
+        "r1":"Líquido",
+        "r2":"Plasma",
+        "r3":"Condensación",
+        "indice":2
+		},
+		{"pregunta":"Cuando le quitamos un electrón a un átomo su carga se vuelve más...",
+        "r1":"Positiva",
+        "r2":"no cambia",
+        "r3":"Negativa",
+        "indice":0
+		}
+
+	]
+}
