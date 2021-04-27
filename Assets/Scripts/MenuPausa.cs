@@ -76,7 +76,9 @@ public class MenuPausa : MonoBehaviour
     public void SalirDelJuego(){
         //Código para guardar información
         SaludPersonaje.instance.SubirInformacionPersonaje();
+        Pausar();
         //Ir a menu principal
         SceneManager.LoadScene("IniciarSesion");
+        //Application.Quit();
     }
 }

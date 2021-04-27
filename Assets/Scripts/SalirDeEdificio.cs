@@ -41,6 +41,7 @@ public class SalirDeEdificio : MonoBehaviour
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
                 GuardarNivelPlayerPrefs("Refugio4");
+                SaludPersonaje.instance.SubirInformacionPersonaje();
                 SceneManager.LoadScene("Refugio4");
             }  
         }

@@ -48,9 +48,11 @@ public class Helicoptero : MonoBehaviour
                 var currentSceneName = currentScene.name;
                 if(currentSceneName == "Edificio1"){
                     GuardarNivelPlayerPrefs("Jungla");
+                    SaludPersonaje.instance.SubirInformacionPersonaje();
                     SceneManager.LoadScene("Jungla");
                 }else if(currentSceneName == "Jungla"){
                     GuardarNivelPlayerPrefs("Cueva 1");
+                    SaludPersonaje.instance.SubirInformacionPersonaje();
                     SceneManager.LoadScene("Cueva 1");
                 }
             } 

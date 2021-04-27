@@ -45,6 +45,7 @@ public class EdificioTecnologico : MonoBehaviour
                 //paso de nivel y tiene derecho a conservar las monedas temporales
                 SaludPersonaje.instance.ConservarMonedasTemporales();
                 GuardarNivelPlayerPrefs("Edificio1");
+                SaludPersonaje.instance.SubirInformacionPersonaje();
                 SceneManager.LoadScene("Edificio1");
             }  
         } 

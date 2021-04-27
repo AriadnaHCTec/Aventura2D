@@ -42,6 +42,7 @@ public class ElevadorRefugio2 : MonoBehaviour
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
                 GuardarNivelPlayerPrefs("Refugio3");
+                SaludPersonaje.instance.SubirInformacionPersonaje();
                 SceneManager.LoadScene("Refugio3");
             }  
         }

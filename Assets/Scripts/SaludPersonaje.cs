@@ -196,8 +196,6 @@ public class SaludPersonaje : MonoBehaviour
 
 
     public void SubirInformacionPersonaje(){
-        //GuardarNivelPlayerPrefs();
-
         //Restar monedas temporales del nivel
         SalirDelJuego();
         EnviarDatos.instance.EscribirJson();

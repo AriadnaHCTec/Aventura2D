@@ -58,7 +58,7 @@ public class EnviarDatos : MonoBehaviour
         datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;
         datos.intentoPreguntas = SaludPersonaje.instance.intentoPreguntas;
         datos.puntos = SaludPersonaje.instance.monedas;
-        datos.horaInicioInicioSesion = "2020-04-04";//Menu.instance.inicioSesion;
+        datos.horaInicioInicioSesion = MenuInicioSesion.instance.inicioSesion;//Menu.instance.inicioSesion;
         datos.horaFinalInicioSesion = DateTime.Now.ToString("yyyy-MM-dd");
         WWWForm forma = new WWWForm();
         forma.AddField("UsuarioUsuario", datos.UsuarioUsuario);

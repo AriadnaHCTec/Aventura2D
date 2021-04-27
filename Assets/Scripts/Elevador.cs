@@ -45,9 +45,11 @@ public class Elevador : MonoBehaviour
                 var currentSceneName = currentScene.name;
                 if(currentSceneName == "Refugio"){
                     GuardarNivelPlayerPrefs("Refugio2");
+                    SaludPersonaje.instance.SubirInformacionPersonaje();
                     SceneManager.LoadScene("Refugio2");
                 }else{
                     GuardarNivelPlayerPrefs("Refugio3");
+                    SaludPersonaje.instance.SubirInformacionPersonaje();
                     SceneManager.LoadScene("Refugio3");
                     
                 }

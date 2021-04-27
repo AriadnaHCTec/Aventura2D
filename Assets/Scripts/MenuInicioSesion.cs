@@ -27,6 +27,7 @@ public class MenuInicioSesion : MonoBehaviour
 
     public void EscribirJsonInicioSesion() //Bot�n
     {
+        inicioSesion = DateTime.Now.ToString("yyyy-MM-dd");
         //Concurrente
         StartCoroutine(SubirJson());
     }

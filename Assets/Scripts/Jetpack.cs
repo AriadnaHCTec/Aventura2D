@@ -44,6 +44,7 @@ public class Jetpack : MonoBehaviour
                 //paso de nivel y tiene derecho a conservar las monedas temporales
                 SaludPersonaje.instance.ConservarMonedasTemporales();
                 GuardarNivelPlayerPrefs("Edificio2");
+                SaludPersonaje.instance.SubirInformacionPersonaje();
                 SceneManager.LoadScene("Edificio2");
             }
         }
