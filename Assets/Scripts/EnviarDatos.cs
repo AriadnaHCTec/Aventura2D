@@ -50,7 +50,7 @@ public class EnviarDatos : MonoBehaviour
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
 
-        datos.UsuarioUsuario = "Mike";//Menu.instance.usuarioTexto.text;
+        datos.UsuarioUsuario = MenuInicioSesion.instance.usuario.text;//Menu.instance.usuarioTexto.text;
         datos.NivelNumNivel = currentSceneName;
         datos.vidas = SaludPersonaje.instance.vidas;
         datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;

@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System.IO;
+using System.Threading.Tasks;
 /*
  Menu Inicio de Sesion
 Ariadna Huesca Coronado
@@ -34,8 +35,8 @@ public class MenuInicioSesion : MonoBehaviour
     private IEnumerator SubirJson()
     {                
         WWWForm forma = new WWWForm();
-        forma.AddField("usuario", usuario.text);
-        forma.AddField("contraseña", contraseña.text);
+        forma.AddField("nombreUsuario", usuario.text);
+        forma.AddField("contraseñaUsuario", contraseña.text);
         UnityWebRequest request = UnityWebRequest.Post("http://localhost:8080/usuario/iniciarSesion", forma);
         //Aqu� es la bifurcaci�n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
@@ -47,6 +48,9 @@ public class MenuInicioSesion : MonoBehaviour
             {
                 PlayerPrefs.SetString("usuario", usuario.text);
                 PlayerPrefs.Save();
+                string path = Application.persistentDataPath + "/usuario.txt";
+                System.IO.File.WriteAllText (path, usuario.text);
+
                 SceneManager.LoadScene("Refugio");                
             }
             else

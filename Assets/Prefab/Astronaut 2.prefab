@@ -327,6 +327,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c444c786c9b4d944928b2b3473fa0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3323001536889736713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896916700197239178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af13d26ece4d16c49885f6b59129040e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "contrase\xF1a": {fileID: 0}
+  usuario: {fileID: 0}
+  resultado: {fileID: 0}
+  inicioSesion: 
 --- !u!1 &8370765517007434528
 GameObject:
   m_ObjectHideFlags: 0

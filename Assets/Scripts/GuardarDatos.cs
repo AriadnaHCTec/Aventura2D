@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.UI;
 
 /*
     Este codigo crea un archivo binario donde se
@@ -10,11 +12,16 @@ using System.Runtime.Serialization.Formatters.Binary;
     Autor: Miguel Ángel Pérez López
 */
 
+
 public class GuardarDatos
-{
+{   
+    //public string pathJugador = "/" + MenuInicioSesion.instance.nombreUsuario + ".game";
+
     public static void GuardarInfo(SaludPersonaje sPersonaje){
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/personaje.game";
+        string path = Application.persistentDataPath + "/" + texto + ".game";//"/mike.game";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         Personaje data = new Personaje(sPersonaje);
@@ -24,7 +31,9 @@ public class GuardarDatos
     }
 
     public static Personaje CargarInfo(){
-        string path = Application.persistentDataPath + "/personaje.game";
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        string path = Application.persistentDataPath + "/" + texto + ".game";
         if(File.Exists(path)){
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);

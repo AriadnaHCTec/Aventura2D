@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class SaludPersonaje : MonoBehaviour
 {
+    //public string nombreUsuario = "";
     public int vidas = 4;
     public int monedas = 0;
     public int monedasPorNivel = 0;//estas monedas se guardan pero si el jugador muere en el nivel se borran
@@ -33,12 +34,25 @@ public class SaludPersonaje : MonoBehaviour
     }
 
 
+    public void Start(){
+        try{
+            CargarInfo();
+        }
+        catch{
+            Debug.LogError("aaaaa");
+            GuardarInfo();
+        }
+
+    }
+
+
     public void GuardarInfo(){
         GuardarDatos.GuardarInfo(this);
     }
 
     public void CargarInfo(){
         Personaje data = GuardarDatos.CargarInfo();
+        //nombreUsuario = data.nombreUsuario;
         vidas = data.vidas;
         monedas = data.monedas;
         monedasPorNivel = data.monedasPorNivel;

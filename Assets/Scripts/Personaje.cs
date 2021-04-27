@@ -15,6 +15,7 @@ using UnityEngine;
 [System.Serializable]
 public class Personaje
 {
+    //public string nombreUsuario;
     public int vidas;
     public int monedas;
     public int monedasPorNivel;//estas monedas se guardan pero si el jugador muere en el nivel se borran
@@ -31,6 +32,7 @@ public class Personaje
 
 
     public Personaje(SaludPersonaje saludPersonaje){
+        //nombreUsuario = saludPersonaje.nombreUsuario;
         vidas = saludPersonaje.vidas;
         monedas = saludPersonaje.monedas;
         monedasPorNivel = saludPersonaje.monedasPorNivel;
