@@ -28,17 +28,21 @@ public class ElevadorRefugio2 : MonoBehaviour
     }
 
 
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     void Update() {
 
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
-                var currentScene = SceneManager.GetActiveScene();
-                var currentSceneName = currentScene.name;
-                if(currentSceneName == "Refugio3"){
-                    SceneManager.LoadScene("Refugio2");
-                }else{
-                    SceneManager.LoadScene("Refugio3");
-                }
+                GuardarNivelPlayerPrefs("Refugio3");
+                SceneManager.LoadScene("Refugio3");
             }  
         }
     }

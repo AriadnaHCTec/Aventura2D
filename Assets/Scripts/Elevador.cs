@@ -28,6 +28,15 @@ public class Elevador : MonoBehaviour
     }
 
 
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     void Update() {
 
         if(validar){
@@ -35,9 +44,10 @@ public class Elevador : MonoBehaviour
                 var currentScene = SceneManager.GetActiveScene();
                 var currentSceneName = currentScene.name;
                 if(currentSceneName == "Refugio"){
+                    GuardarNivelPlayerPrefs("Refugio2");
                     SceneManager.LoadScene("Refugio2");
                 }else{
-                    //PlayerPrefs.SetInt("platicaIngeniero",1);
+                    GuardarNivelPlayerPrefs("Refugio3");
                     SceneManager.LoadScene("Refugio3");
                     
                 }

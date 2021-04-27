@@ -134,7 +134,7 @@ public class SaludPersonaje : MonoBehaviour
         monedas -= monedasPorNivel;
         monedasPorNivel = 0;
         nivel = nivell;
-
+        //GuardarNivelPlayerPrefs();
 
         tiempoFinal = DateTime.Now;
         TimeSpan span = tiempoFinal.Subtract ( tiempoInicio );
@@ -158,6 +158,7 @@ public class SaludPersonaje : MonoBehaviour
     public void SalirDelJuego(){
         //Al salir del juego, elimina las monedas temporales
         CargarInfo();
+        //GuardarNivelPlayerPrefs();
         monedas -= monedasPorNivel;
         monedasPorNivel = 0;
         GuardarInfo();
@@ -180,6 +181,7 @@ public class SaludPersonaje : MonoBehaviour
 
 
     public int RegresarNivel(){
+        //GuardarNivelPlayerPrefs();
         CargarInfo();
         return nivel;
     }
@@ -194,6 +196,8 @@ public class SaludPersonaje : MonoBehaviour
 
 
     public void SubirInformacionPersonaje(){
+        //GuardarNivelPlayerPrefs();
+
         //Restar monedas temporales del nivel
         SalirDelJuego();
         EnviarDatos.instance.EscribirJson();
@@ -247,4 +251,15 @@ public class SaludPersonaje : MonoBehaviour
             return "Refugio";
         }
     }
+
+    /*
+    public void GuardarNivelPlayerPrefs(){
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel",currentSceneName);
+        PlayerPrefs.Save();
+    }*/
 }

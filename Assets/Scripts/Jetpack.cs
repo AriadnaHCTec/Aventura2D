@@ -27,15 +27,23 @@ public class Jetpack : MonoBehaviour
         panelInformativo.SetActive(validar);
     }
 
+
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     void Update(){
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
                 //Mantener las monedas temporales del nivel porque el jugador 
                 //paso de nivel y tiene derecho a conservar las monedas temporales
                 SaludPersonaje.instance.ConservarMonedasTemporales();
-                
-                var currentScene = SceneManager.GetActiveScene();
-                var currentSceneName = currentScene.name;
+                GuardarNivelPlayerPrefs("Edificio2");
                 SceneManager.LoadScene("Edificio2");
             }
         }

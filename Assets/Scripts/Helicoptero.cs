@@ -27,6 +27,16 @@ public class Helicoptero : MonoBehaviour
         panelInformativo.SetActive(validar);
     }
 
+
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     void Update(){
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
@@ -37,8 +47,10 @@ public class Helicoptero : MonoBehaviour
                 var currentScene = SceneManager.GetActiveScene();
                 var currentSceneName = currentScene.name;
                 if(currentSceneName == "Edificio1"){
+                    GuardarNivelPlayerPrefs("Jungla");
                     SceneManager.LoadScene("Jungla");
                 }else if(currentSceneName == "Jungla"){
+                    GuardarNivelPlayerPrefs("Cueva 1");
                     SceneManager.LoadScene("Cueva 1");
                 }
             } 

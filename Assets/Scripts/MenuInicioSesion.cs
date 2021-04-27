@@ -50,7 +50,14 @@ public class MenuInicioSesion : MonoBehaviour
                 string path = Application.persistentDataPath + "/usuario.txt";
                 System.IO.File.WriteAllText (path, usuario.text);
                 print("osiois");
-                //SceneManager.LoadScene("Refugio");                
+                
+                //Cargar el nivel donde se quedo el jugador si es que ya había jugado
+                if(PlayerPrefs.HasKey(usuario.text + "Nivel")){
+                    string nivel = PlayerPrefs.GetString(usuario.text + "Nivel");
+                    SceneManager.LoadScene(nivel);
+                }else{
+                    SceneManager.LoadScene("Refugio");
+                }
             }
             else
             {

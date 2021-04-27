@@ -27,10 +27,20 @@ public class SalirDeEdificio : MonoBehaviour
     }
 
 
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     void Update() {
 
         if(validar){
             if(Input.GetKeyDown(KeyCode.E)){
+                GuardarNivelPlayerPrefs("Refugio4");
                 SceneManager.LoadScene("Refugio4");
             }  
         }

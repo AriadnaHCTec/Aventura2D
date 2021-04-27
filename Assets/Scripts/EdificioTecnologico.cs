@@ -24,6 +24,16 @@ public class EdificioTecnologico : MonoBehaviour
         pantallaInformativa.SetActive(validar);    
     }
 
+
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     // Update is called once per frame
     void Update(){
         if(validar){
@@ -34,6 +44,7 @@ public class EdificioTecnologico : MonoBehaviour
                 //Mantener las monedas temporales del nivel porque el jugador 
                 //paso de nivel y tiene derecho a conservar las monedas temporales
                 SaludPersonaje.instance.ConservarMonedasTemporales();
+                GuardarNivelPlayerPrefs("Edificio1");
                 SceneManager.LoadScene("Edificio1");
             }  
         } 

@@ -77,6 +77,6 @@ public class MenuPausa : MonoBehaviour
         //Código para guardar información
         SaludPersonaje.instance.SubirInformacionPersonaje();
         //Ir a menu principal
-        SceneManager.LoadScene("MenuPrincipal");
+        SceneManager.LoadScene("IniciarSesion");
     }
 }

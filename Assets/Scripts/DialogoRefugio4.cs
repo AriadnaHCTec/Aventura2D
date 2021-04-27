@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DialogRefugio3 : MonoBehaviour
+public class DialogoRefugio4 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -12,7 +12,7 @@ public class DialogRefugio3 : MonoBehaviour
     public float typingSpeed;
     public GameObject panel;//
     public GameObject continueButton;
-    public GameObject barreraControl; //barrera que prohibe que salga del cuarto hasta que acabe la platica
+    public GameObject canvasFinal;//Canvas que cuenta el epilogo
     public GameObject colliderPiso;//borarr el collider que activa la primera platica
 
     void Start(){
@@ -49,7 +49,7 @@ public class DialogRefugio3 : MonoBehaviour
             //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
-            Destroy(barreraControl,0.5f);
+            canvasFinal.SetActive(true);
         }
     }
 
