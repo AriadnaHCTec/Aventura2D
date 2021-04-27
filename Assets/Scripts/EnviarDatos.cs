@@ -49,8 +49,10 @@ public class EnviarDatos : MonoBehaviour
     {
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
 
-        datos.UsuarioUsuario = MenuInicioSesion.instance.usuario.text;//Menu.instance.usuarioTexto.text;
+        datos.UsuarioUsuario = texto;//Menu.instance.usuarioTexto.text;
         datos.NivelNumNivel = currentSceneName;
         datos.vidas = SaludPersonaje.instance.vidas;
         datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;

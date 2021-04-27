@@ -55,18 +55,22 @@ public class Enemigo : MonoBehaviour
     public int NivelActual(){
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
-        if(currentSceneName=="Refugio3"){
+        if(currentSceneName == "Refugio"){
             return 1;
-        }else if(currentSceneName=="Edificio1"){
+        }else if(currentSceneName == "Refugio2"){
             return 2;
-        }else if(currentSceneName=="Jungla"){
+        }else if(currentSceneName=="Refugio3"){
             return 3;
-        }else if(currentSceneName=="Cueva 1"){
+        }else if(currentSceneName == "Edificio1"){
             return 4;
-        }else if(currentSceneName=="Edificio2"){
+        }else if(currentSceneName == "Jungla"){
             return 5;
-        }else if(currentSceneName=="Refugio4"){
+        }else if(currentSceneName == "Cueva 1"){
             return 6;
+        }else if(currentSceneName == "Edificio2"){
+            return 7;
+        }else if(currentSceneName == "Refugio4"){
+            return 8;
         }else{
             return 1;
         }

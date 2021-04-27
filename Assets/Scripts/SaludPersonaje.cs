@@ -39,7 +39,6 @@ public class SaludPersonaje : MonoBehaviour
             CargarInfo();
         }
         catch{
-            Debug.LogError("aaaaa");
             GuardarInfo();
         }
 
@@ -136,6 +135,7 @@ public class SaludPersonaje : MonoBehaviour
         monedasPorNivel = 0;
         nivel = nivell;
 
+
         tiempoFinal = DateTime.Now;
         TimeSpan span = tiempoFinal.Subtract ( tiempoInicio );
         tiempoTotal = span.Hours + ":" + span.Minutes;
@@ -184,6 +184,14 @@ public class SaludPersonaje : MonoBehaviour
         return nivel;
     }
 
+    /*
+    public void EscribirTxtNivel(){
+        CargarInfo();
+        string path = Application.persistentDataPath + "/nivel.txt";
+        System.IO.File.WriteAllText(path, CargarNivelActualString());
+        GuardarInfo();
+    }*/
+
 
     public void SubirInformacionPersonaje(){
         //Restar monedas temporales del nivel
@@ -196,19 +204,47 @@ public class SaludPersonaje : MonoBehaviour
         tiempoInicio = DateTime.Now;
         int nivell = SaludPersonaje.instance.RegresarNivel();
         if(nivell == 1){
-            SceneManager.LoadScene("Refugio3");
+            SceneManager.LoadScene("Refugio");
         }else if(nivell == 2){
-            SceneManager.LoadScene("Edificio1");
+            SceneManager.LoadScene("Refugio2");
         }else if(nivell==3){
-            SceneManager.LoadScene("Jungla");
+            SceneManager.LoadScene("Refugio3");
         }else if(nivell == 4){
-            SceneManager.LoadScene("Cueva 1");
+            SceneManager.LoadScene("Edificio1");
         }else if(nivell == 5){
+            SceneManager.LoadScene("Jungla");
+        }else if(nivell == 6){
+            SceneManager.LoadScene("Cueva 1");
+        }else if(nivell == 7){
             SceneManager.LoadScene("Edificio2");
-        }else if (nivell == 6){
+        }else if(nivell == 8){
             SceneManager.LoadScene("Refugio4");
         }else{
-            SceneManager.LoadScene("Refugio3");//checar este caso
+            SceneManager.LoadScene("Refugio");//checar este caso
+        }
+    }
+
+
+    public string CargarNivelActualString(){
+        int nivell = SaludPersonaje.instance.RegresarNivel();
+        if(nivell == 1){
+            return "Refugio";
+        }else if(nivell == 2){
+            return "Refugio2";
+        }else if(nivell==3){
+            return "Refugio3";
+        }else if(nivell == 4){
+            return "Edificio1";
+        }else if(nivell == 5){
+            return "Jungla";
+        }else if(nivell == 6){
+            return "Cueva 1";
+        }else if(nivell == 7){
+            return "Edificio2";
+        }else if(nivell == 8){
+            return "Refugio4";
+        }else{
+            return "Refugio";
         }
     }
 }

@@ -46,11 +46,9 @@ public class MenuInicioSesion : MonoBehaviour
             string textoPlano = request.downloadHandler.text;
             if(textoPlano == "osiosi")
             {
-                PlayerPrefs.SetString("usuario", usuario.text);
-                PlayerPrefs.Save();
+                //Guardar nombre de usuario en un txt para poder accederlo en otros códigos
                 string path = Application.persistentDataPath + "/usuario.txt";
                 System.IO.File.WriteAllText (path, usuario.text);
-
                 SceneManager.LoadScene("Refugio");                
             }
             else

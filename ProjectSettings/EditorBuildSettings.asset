@@ -18,20 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Refugio3.unity
     guid: 3ab4f736a6c2d5145b39be4941e64f99
   - enabled: 1
-    path: Assets/Scenes/Refugio4.unity
-    guid: a4d4cfe93d63cd741988a195824e1f95
-  - enabled: 1
-    path: Assets/Scenes/MenuS/MenuPrincipal.unity
-    guid: 385ea657da04ace4dba0c4d455dc079a
-  - enabled: 1
-    path: Assets/Scenes/MenuS/MenuSalir.unity
-    guid: 0be377b98d9255e4590dcfd29553cf1a
-  - enabled: 1
     path: Assets/Scenes/Edificio1.unity
     guid: c5ceab88d318a034b96c815a344f3608
-  - enabled: 1
-    path: Assets/Scenes/Edificio2.unity
-    guid: 25c3694113e6f3e448bde9b7703cde78
   - enabled: 1
     path: Assets/Scenes/Jungla.unity
     guid: cbd2bd4a18d1e80429ffb6e700bf26e8
@@ -39,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Cueva 1.unity
     guid: a40db77a997d4974ca0a0f6c1b7167a9
   - enabled: 1
-    path: Assets/Scenes/MenuS/MenuConfiguracion.unity
-    guid: 7454134f768a47f4c88f59ac42c6ce6f
+    path: Assets/Scenes/Edificio2.unity
+    guid: 25c3694113e6f3e448bde9b7703cde78
+  - enabled: 1
+    path: Assets/Scenes/Refugio4.unity
+    guid: a4d4cfe93d63cd741988a195824e1f95
+  - enabled: 1
+    path: Assets/Scenes/IniciarSesion.unity
+    guid: f19d06e6b10b7194cbc2bf5ad5cacb1c
   m_configObjects: {}
