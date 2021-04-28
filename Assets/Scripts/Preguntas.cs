@@ -64,8 +64,15 @@ public class Preguntas : MonoBehaviour
         }
         else
         {
+            var currentScene2 = SceneManager.GetActiveScene();
+            var currentSceneName2 = currentScene2.name;
+            string pathRelativo2 = Application.persistentDataPath + "/usuario.txt";
+            string texto2 = System.IO.File.ReadAllText(pathRelativo2);
+
+            PlayerPrefs.SetInt("preguntas" + texto2 + currentSceneName2, 1);
+            PlayerPrefs.Save();
             Destroy(CanvasPregunta);
-        }                
+        }      
     }
 
     public void Respondio1(int val)

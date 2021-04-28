@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /*
  Pone en true el canvas cuando pasa por un collider
@@ -14,8 +15,20 @@ public class ActivarPreguntas : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //activar canvas dialogo
-            CanvasDialogo.SetActive(true);
+            var currentScene = SceneManager.GetActiveScene();
+            var currentSceneName = currentScene.name;
+            string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+            string texto = System.IO.File.ReadAllText(pathRelativo);
+
+            if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
+                //Destroy(CanvasPregunta);
+                //activar canvas dialogo
+                CanvasDialogo.SetActive(false);
+            }else{
+                CanvasDialogo.SetActive(true);
+            }
+
+
         }
     }
 }
