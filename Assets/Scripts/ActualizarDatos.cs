@@ -18,8 +18,8 @@ public class ActualizarDatos : MonoBehaviour
     //Encapsular los datos para convertir f�cilmente a JSON
     public struct DatosPartida
     {
-        public string UsuarioUsuario;
-        public string NivelNumNivel;//checar con Ari porque 
+        public string usuarioUsuario;
+        public string nivelNumNivel;//checar con Ari porque 
         public int vidas;
         public int preguntas;
         public int intentoPreguntas;
@@ -52,8 +52,8 @@ public class ActualizarDatos : MonoBehaviour
         string pathRelativo = Application.persistentDataPath + "/usuario.txt";
         string texto = System.IO.File.ReadAllText(pathRelativo);
 
-        datos.UsuarioUsuario = texto;//Menu.instance.usuarioTexto.text;
-        datos.NivelNumNivel = currentSceneName;
+        datos.usuarioUsuario = texto;//Menu.instance.usuarioTexto.text;
+        datos.nivelNumNivel = currentSceneName;
         datos.vidas = SaludPersonaje.instance.vidas;
         datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;
         datos.intentoPreguntas = SaludPersonaje.instance.intentoPreguntas;
@@ -61,8 +61,8 @@ public class ActualizarDatos : MonoBehaviour
         datos.horaInicioInicioSesion = "2020-04-04";//Menu.instance.inicioSesion;
         datos.horaFinalInicioSesion = DateTime.Now.ToString("yyyy-MM-dd");
         WWWForm forma = new WWWForm();
-        forma.AddField("UsuarioUsuario", datos.UsuarioUsuario);
-        forma.AddField("NivelNumNivel", datos.NivelNumNivel);
+        forma.AddField("UsuarioUsuario", datos.usuarioUsuario);
+        forma.AddField("NivelNumNivel", datos.nivelNumNivel);
         forma.AddField("vidas", datos.vidas);
         forma.AddField("preguntas", datos.preguntas);
         forma.AddField("intentoPreguntas", datos.intentoPreguntas);
