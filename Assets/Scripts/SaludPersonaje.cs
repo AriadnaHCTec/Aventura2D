@@ -23,7 +23,7 @@ public class SaludPersonaje : MonoBehaviour
     public BoxCollider2D collider2D;//desactivar para que no le bajen más vidas al jugador cuando muere
     public DateTime tiempoInicio;
     public DateTime tiempoFinal;
-    public string tiempoTotal;
+    public float tiempoTotal;
     public AudioSource sonidoHerido;
     public AudioSource sonidoMuere;
     public int acaboNivel = 0;//valor que se guardara en base de datos para confirmar que el jugador acabo el juego
@@ -138,7 +138,7 @@ public class SaludPersonaje : MonoBehaviour
 
         tiempoFinal = DateTime.Now;
         TimeSpan span = tiempoFinal.Subtract ( tiempoInicio );
-        tiempoTotal = span.Hours + ":" + span.Minutes;
+        tiempoTotal = span.Minutes;
 
         sonidoMuere.Play();
 
