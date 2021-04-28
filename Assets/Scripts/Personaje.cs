@@ -28,7 +28,7 @@ public class Personaje
     public int intentoPreguntas;
     public DateTime tiempoInicio;
     public DateTime tiempoFinal;
-    public string tiempoTotal;
+    public float tiempoTotal;
 
 
     public Personaje(SaludPersonaje saludPersonaje){
