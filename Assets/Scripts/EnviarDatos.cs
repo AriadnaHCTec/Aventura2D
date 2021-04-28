@@ -52,14 +52,17 @@ public class EnviarDatos : MonoBehaviour
         string pathRelativo = Application.persistentDataPath + "/usuario.txt";
         string texto = System.IO.File.ReadAllText(pathRelativo);
 
+        string pathRelativo2 = Application.persistentDataPath + "/horaInicio.txt";
+        string horaInicio = System.IO.File.ReadAllText(pathRelativo2);
+
         datos.UsuarioUsuario = texto;//Menu.instance.usuarioTexto.text;
         datos.NivelNumNivel = currentSceneName;
         datos.vidas = SaludPersonaje.instance.vidas;
-        datos.preguntas = SaludPersonaje.instance.preguntasCorrectasEdif1;
+        datos.preguntas = SaludPersonaje.instance.SumarPreguntasTotales();
         datos.intentoPreguntas = SaludPersonaje.instance.intentoPreguntas;
         datos.puntos = SaludPersonaje.instance.monedas;
-        datos.horaInicioInicioSesion = MenuInicioSesion.instance.inicioSesion;//Menu.instance.inicioSesion;
-        datos.horaFinalInicioSesion = DateTime.Now.ToString("yyyy-MM-dd");
+        datos.horaInicioInicioSesion = horaInicio;
+        datos.horaFinalInicioSesion = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         WWWForm forma = new WWWForm();
         forma.AddField("UsuarioUsuario", datos.UsuarioUsuario);
         forma.AddField("NivelNumNivel", datos.NivelNumNivel);

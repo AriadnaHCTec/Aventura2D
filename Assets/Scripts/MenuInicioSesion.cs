@@ -27,7 +27,7 @@ public class MenuInicioSesion : MonoBehaviour
 
     public void EscribirJsonInicioSesion() //Bot�n
     {
-        inicioSesion = DateTime.Now.ToString("yyyy-MM-dd");
+        
         //Concurrente
         StartCoroutine(SubirJson());
     }
@@ -50,6 +50,11 @@ public class MenuInicioSesion : MonoBehaviour
                 //Guardar nombre de usuario en un txt para poder accederlo en otros códigos
                 string path = Application.persistentDataPath + "/usuario.txt";
                 System.IO.File.WriteAllText (path, usuario.text);
+
+                string path2 = Application.persistentDataPath + "/horaInicio.txt";
+                inicioSesion = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                System.IO.File.WriteAllText (path2, inicioSesion);
+                
                 print("osiois");
                 
                 //Cargar el nivel donde se quedo el jugador si es que ya había jugado

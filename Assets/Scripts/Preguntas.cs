@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /*
  Script para leer un JSON con las preguntas
@@ -75,7 +76,9 @@ public class Preguntas : MonoBehaviour
             {
                 print("Correctisimo bichota");
                 sonidoCorrecto.Play();
-                SaludPersonaje.instance.SumarPuntosDeNivel();
+                var currentScene = SceneManager.GetActiveScene();
+                var currentSceneName = currentScene.name;
+                SaludPersonaje.instance.SumarPuntosDeNivel(currentSceneName);
                 //SaludPersonaje.instance.AumentarMonedasTemporales();
                 //SaludPersonaje.instance.AumentarMonedas();
             }

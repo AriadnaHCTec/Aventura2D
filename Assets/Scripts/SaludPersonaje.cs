@@ -110,9 +110,15 @@ public class SaludPersonaje : MonoBehaviour
     }*/
 
 
-    public void SumarPuntosDeNivel(){
-        var currentScene = SceneManager.GetActiveScene();
-        var currentSceneName = currentScene.name;
+    public int SumarPreguntasTotales(){
+        CargarInfo();
+        return (preguntasCorrectasEdif1 + preguntasCorrectasJungla + preguntasCorrectasCueva + preguntasCorrectasEdif2);
+    }
+
+
+    public void SumarPuntosDeNivel(string currentSceneName){
+        //var currentScene = SceneManager.GetActiveScene();
+        //var currentSceneName = currentScene.name;
         CargarInfo();
         if(currentSceneName == "Edificio1"){
             preguntasCorrectasEdif1 += 1;
@@ -125,7 +131,7 @@ public class SaludPersonaje : MonoBehaviour
         }else{
             preguntasCorrectasTotal +=1;
         }
-        preguntasCorrectasTotal +=1;
+        GuardarInfo();
     }
 
 
