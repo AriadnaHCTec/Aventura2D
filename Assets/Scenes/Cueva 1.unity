@@ -28298,7 +28298,7 @@ PrefabInstance:
     - target: {fileID: 628208859259795707, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: textJson
       value: 
-      objectReference: {fileID: 4900000, guid: 1e483a2707a59674a89f02332dbd9611, type: 3}
+      objectReference: {fileID: 4900000, guid: 75b1b0b94fcc1b64cb1befcf8203c1d0, type: 3}
     - target: {fileID: 7751652510023376904, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_Name
       value: Preguntas 1
@@ -28390,6 +28390,14 @@ PrefabInstance:
     - target: {fileID: 7751652510023377012, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751652510539854227, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751652510539854227, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}

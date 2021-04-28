@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 628208859259795707, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: textJson
       value: 
-      objectReference: {fileID: 4900000, guid: 199bd1102c12e30478f818333989e5da, type: 3}
+      objectReference: {fileID: 4900000, guid: b069a4246750cbd44861e47fa7680836, type: 3}
     - target: {fileID: 7751652508783863781, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_SizeDelta.x
       value: 500
@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751652509387169668, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7751652509387169669, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_SizeDelta.x
@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751652509500904069, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7751652509500904070, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_SizeDelta.x
@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751652510709203377, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7751652510709203378, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_SizeDelta.x
@@ -74650,7 +74650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2551710191233108441, guid: e3287a5496f3c8f43aeffac344549b63, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2551710191233108452, guid: e3287a5496f3c8f43aeffac344549b63, type: 3}
       propertyPath: m_Name
@@ -74658,7 +74658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2551710191233108452, guid: e3287a5496f3c8f43aeffac344549b63, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2551710191233108455, guid: e3287a5496f3c8f43aeffac344549b63, type: 3}
       propertyPath: panelInformativo

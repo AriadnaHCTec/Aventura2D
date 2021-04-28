@@ -116,9 +116,16 @@ public class SaludPersonaje : MonoBehaviour
     }
 
 
-    public void SumarPuntosDeNivel(string currentSceneName){
-        //var currentScene = SceneManager.GetActiveScene();
-        //var currentSceneName = currentScene.name;
+    public void SumarIntentos(){
+        CargarInfo();
+        intentoPreguntas += 1;
+        GuardarInfo();
+    }
+
+
+    public void SumarPuntosDeNivel(){
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
         CargarInfo();
         if(currentSceneName == "Edificio1"){
             preguntasCorrectasEdif1 += 1;
@@ -129,7 +136,7 @@ public class SaludPersonaje : MonoBehaviour
         }else if(currentSceneName == "Edificio2"){
             preguntasCorrectasEdif2 +=1;
         }else{
-            preguntasCorrectasTotal +=1;
+            preguntasCorrectasTotal += 0;
         }
         GuardarInfo();
     }
@@ -200,9 +207,14 @@ public class SaludPersonaje : MonoBehaviour
         GuardarInfo();
     }*/
 
+    public void SubirPersonajeTerminoJuego(){
+        CambiarEstadoFinal.instance.EscribirJson2();
+    }
+
 
     public void SubirInformacionPersonaje(){
         //Restar monedas temporales del nivel
+        CargarInfo();
         SalirDelJuego();
         EnviarDatos.instance.EscribirJson();
     }

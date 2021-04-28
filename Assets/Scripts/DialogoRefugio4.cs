@@ -29,6 +29,16 @@ public class DialogoRefugio4 : MonoBehaviour
         }
     }
 
+
+    public void GuardarNivelPlayerPrefs(string escena){
+        //Obtener nombre de usuario para guardar un playerpref con su nombre
+        string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+        string texto = System.IO.File.ReadAllText(pathRelativo);
+        PlayerPrefs.SetString(texto + "Nivel", escena);
+        PlayerPrefs.Save();
+    }
+
+
     IEnumerator Type(){
         foreach(char letter in sentences[index].ToCharArray()){
             textDisplay.text += letter; 
@@ -49,7 +59,10 @@ public class DialogoRefugio4 : MonoBehaviour
             //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
+            SaludPersonaje.instance.SubirPersonajeTerminoJuego();
             canvasFinal.SetActive(true);
+            GuardarNivelPlayerPrefs("Refugio4");
+            SaludPersonaje.instance.SubirInformacionPersonaje();
         }
     }
 

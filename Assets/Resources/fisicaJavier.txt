@@ -1,0 +1,36 @@
+{
+	"nivel":[
+		{
+			"pregunta":"¿Cuál es la fórmula de la fuerza?",
+			"r1":"F=m/a",
+			"r2":"F=m*a",
+			"r3":"F=m+a",
+			"indice":1
+		},
+		{"pregunta":"Conforme disminuye la fuerza potencial, aumenta la fuerza:",
+        "r1":"cinética",
+        "r2":"enérgica",
+        "r3":"de inercia",
+        "indice":0
+		},
+		{"pregunta":"¿Cuál es el valor de la fuerza de gravedad en la Tierra?",
+        "r1":"9.81 m/s²",
+        "r2":"9.81 m/s",
+        "r3":"98.1 m/s²",
+        "indice":0
+		},
+        {"pregunta":"¿Qué fórmula de éstas describe el valor de la velocidad final de un objeto que cae en caida libre partiendo del reposo?",
+        "r1":"Vf=g/t",
+        "r2":"Vf=g+t",
+        "r3":"Vf=g*t",
+        "indice":2
+        },
+        {"pregunta":"¿Cuál es la fórmula de la densidad?",
+        "r1":"D=m*v",
+        "r2":"D=m/v",
+        "r3":"D=m+v",
+        "indice":1
+        }
+
+	]
+}

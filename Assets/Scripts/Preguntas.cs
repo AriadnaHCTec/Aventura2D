@@ -76,9 +76,10 @@ public class Preguntas : MonoBehaviour
             {
                 print("Correctisimo bichota");
                 sonidoCorrecto.Play();
-                var currentScene = SceneManager.GetActiveScene();
-                var currentSceneName = currentScene.name;
-                SaludPersonaje.instance.SumarPuntosDeNivel(currentSceneName);
+                //var currentScene = SceneManager.GetActiveScene();
+                //var currentSceneName = currentScene.name;
+                //PlayerPrefs.SetInt("pregunta" + currentSceneName,1);
+                SaludPersonaje.instance.SumarPuntosDeNivel();
                 //SaludPersonaje.instance.AumentarMonedasTemporales();
                 //SaludPersonaje.instance.AumentarMonedas();
             }
@@ -87,6 +88,7 @@ public class Preguntas : MonoBehaviour
                 sonidoIncorrecto.Play();
                 print("nou");
             }
+            SaludPersonaje.instance.SumarIntentos();
         }   
     }
 }
