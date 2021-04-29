@@ -52,20 +52,19 @@ public TextMeshProUGUI textDisplay;
             //Destroy(boton,0.5f);
             continueButton.SetActive(false);
             panel.SetActive(false);
-            panelPreguntas.SetActive(true);//activar panel para hacer preguntas
+
+            //verificar si el jugador ya respondio las preguntas antes
+            var currentScene = SceneManager.GetActiveScene();
+            var currentSceneName = currentScene.name;
+            string pathRelativo = Application.persistentDataPath + "/usuario.txt";
+            string texto = System.IO.File.ReadAllText(pathRelativo);
+            if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
+                //activar canvas dialogo
+                panelPreguntas.SetActive(false);
+            }else{
+                panelPreguntas.SetActive(true);//activar panel para hacer preguntas
+            }
             Destroy(colliderPlatica, 0.5f);
-            //Destroy(barreraControl,0.5f);
-            //Preferencias
-            //PlayerPrefs.SetInt("platicaConMama1",1);
-            //PlayerPrefs.Save();
-            
-            //var currentScene = SceneManager.GetActiveScene();
-            //var currentSceneName = currentScene.name;
-            //if(currentSceneName == "Refugio2"){
-            //    Destroy(IngenieroImagen, 0.1f);
-            //    Destroy(colliderPiso, 0.1f);
-            //    IngenieroAnimacion.SetActive(true);
-            //}
         }
     }
 }

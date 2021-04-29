@@ -14,6 +14,7 @@ public class DialogoRefugio4 : MonoBehaviour
     public GameObject continueButton;
     public GameObject canvasFinal;//Canvas que cuenta el epilogo
     public GameObject colliderPiso;//borarr el collider que activa la primera platica
+    public GameObject HUD;//para desactivarlo
 
     void Start(){
         PlayerPrefs.DeleteAll();
@@ -60,6 +61,7 @@ public class DialogoRefugio4 : MonoBehaviour
             continueButton.SetActive(false);
             panel.SetActive(false);
             SaludPersonaje.instance.SubirPersonajeTerminoJuego();
+            HUD.SetActive(false);
             canvasFinal.SetActive(true);
             GuardarNivelPlayerPrefs("Refugio4");
             SaludPersonaje.instance.SubirInformacionPersonaje();

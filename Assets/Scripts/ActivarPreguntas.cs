@@ -27,8 +27,6 @@ public class ActivarPreguntas : MonoBehaviour
             }else{
                 CanvasDialogo.SetActive(true);
             }
-
-
         }
     }
 }
