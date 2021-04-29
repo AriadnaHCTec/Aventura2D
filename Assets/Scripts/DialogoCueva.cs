@@ -20,6 +20,7 @@ public TextMeshProUGUI textDisplay;
     public GameObject continueButton;
     public GameObject colliderPlatica;//Collider que activa la platica con Kathleen//se declara para destruirlo
     public GameObject panelPreguntas;//panel donde el jugador debe responder varias preguntas
+    public GameObject canvasExplicacion;
 
     void Start() {
         //Time.timeScale = 0;
@@ -59,10 +60,10 @@ public TextMeshProUGUI textDisplay;
             string pathRelativo = Application.persistentDataPath + "/usuario.txt";
             string texto = System.IO.File.ReadAllText(pathRelativo);
             if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
-                //activar canvas dialogo
+                canvasExplicacion.SetActive(false);
                 panelPreguntas.SetActive(false);
             }else{
-                panelPreguntas.SetActive(true);//activar panel para hacer preguntas
+                canvasExplicacion.SetActive(true);//activar panel para hacer preguntas
             }
             Destroy(colliderPlatica, 0.5f);
         }

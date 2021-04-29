@@ -15,6 +15,7 @@ public TextMeshProUGUI textDisplay;
     public GameObject colliderPlatica;//Collider que activa la platica con Kathleen//se declara para destruirlo
     public GameObject panelPreguntas;
     public GameObject helicoptero;
+    public GameObject canvasExplicacion;
     
 
     void Start() {
@@ -56,10 +57,10 @@ public TextMeshProUGUI textDisplay;
             string pathRelativo = Application.persistentDataPath + "/usuario.txt";
             string texto = System.IO.File.ReadAllText(pathRelativo);
             if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
-                //activar canvas dialogo
+                canvasExplicacion.SetActive(false);
                 panelPreguntas.SetActive(false);
             }else{
-                panelPreguntas.SetActive(true);//activar panel para hacer preguntas
+                canvasExplicacion.SetActive(true);//activar panel de explicacion
             }
             helicoptero.SetActive(true);
         }

@@ -40,7 +40,7 @@ public class CambiarEstadoFinal : MonoBehaviour
         datos.nombreUsuario = texto;//Menu.instance.usuarioTexto.text;
         WWWForm forma = new WWWForm();
         forma.AddField("nombreUsuario", datos.nombreUsuario);
-        UnityWebRequest request = UnityWebRequest.Post("http://localhost:8080/usuario/UsuarioTermino", forma);
+        UnityWebRequest request = UnityWebRequest.Post("http://http://3.17.77.93:8080/usuario/UsuarioTermino", forma);
         //Aqu� es la bifurcaci�n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
         // Ya regres�, se termin� de ejecutar.

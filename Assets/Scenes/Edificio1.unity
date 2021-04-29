@@ -1529,6 +1529,7 @@ GameObject:
   - component: {fileID: 315374680}
   - component: {fileID: 315374679}
   - component: {fileID: 315374678}
+  - component: {fileID: 315374682}
   m_Layer: 5
   m_Name: CanvasExplicacionTemas
   m_TagString: Untagged
@@ -1565,10 +1566,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1618,6 +1619,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &315374682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315374677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b8d682e5daaa74ca8856dcbbc5c9f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasPreguntas: {fileID: 1643711486}
+  canvasActual: {fileID: 315374677}
 --- !u!1 &317250083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1781,7 +1796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -548.9133, y: -296.14127}
+  m_AnchoredPosition: {x: -449, y: -296.14127}
   m_SizeDelta: {x: 605.265, y: 405.3963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335794999
@@ -10953,7 +10968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 490, y: -429}
+  m_AnchoredPosition: {x: 490, y: -486}
   m_SizeDelta: {x: 797.7578, y: 790.8359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713034678
@@ -10978,18 +10993,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: aa7f2a67360cee146ad6c947a181950b, type: 3}
-    m_FontSize: 150
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 200
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Esta regla no funciona con n = 1
+  m_Text: "Con la ley de Ohm puedes calcular lo siguiente: \nv=voltaje\nr= resistencia\ni
+    = corriente el\xE9ctrica\nRecuerda estas formulas.\n<-"
 --- !u!222 &713034679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12218,6 +12234,8 @@ GameObject:
   - component: {fileID: 1143344690}
   - component: {fileID: 1143344689}
   - component: {fileID: 1143344688}
+  - component: {fileID: 1143344692}
+  - component: {fileID: 1143344691}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -12288,7 +12306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1143344689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 315374682}
+        m_TargetAssemblyTypeName: CanvasExplicacion, Assembly-CSharp
+        m_MethodName: ClickBoton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1143344689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12327,6 +12357,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143344686}
   m_CullTransparentMesh: 1
+--- !u!114 &1143344691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143344686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1143344692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143344686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &1152266152
 GameObject:
   m_ObjectHideFlags: 0
@@ -14675,7 +14739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3098c4a919184d47bf1b120e7f8c00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasDialogo: {fileID: 1643711486}
+  canvasExplicacion: {fileID: 315374677}
   libro: {fileID: 1435195392}
 --- !u!61 &1734353165
 BoxCollider2D:

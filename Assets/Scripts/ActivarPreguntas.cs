@@ -10,7 +10,7 @@ Ariadna Huesca Coronado
 public class ActivarPreguntas : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject CanvasDialogo;    
+    public GameObject canvasExplicacion;    
     public GameObject libro;//para aparecerlo hasta que acabe las preguntas
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,10 +23,10 @@ public class ActivarPreguntas : MonoBehaviour
 
             if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
                 //activar canvas dialogo
-                CanvasDialogo.SetActive(false);
+                canvasExplicacion.SetActive(false);
                 libro.SetActive(true);
             }else{
-                CanvasDialogo.SetActive(true);
+                canvasExplicacion.SetActive(true);
                 libro.SetActive(true);
             }
         }
