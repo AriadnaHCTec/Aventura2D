@@ -38,7 +38,7 @@ public class MenuInicioSesion : MonoBehaviour
         WWWForm forma = new WWWForm();
         forma.AddField("nombreUsuario", usuario.text);
         forma.AddField("contraseñaUsuario", contraseña.text);
-        UnityWebRequest request = UnityWebRequest.Post("http://localhost:8080/usuario/iniciarSesion", forma);
+        UnityWebRequest request = UnityWebRequest.Post("http://3.17.77.93:8080/usuario/iniciarSesion", forma);
         //Aqu� es la bifurcaci�n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
         // Ya regres�, se termin� de ejecutar.
