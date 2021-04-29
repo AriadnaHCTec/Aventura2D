@@ -650,8 +650,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 859749676}
   m_TextComponent: {fileID: 738386707}
   m_Placeholder: {fileID: 1816928977}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -991,9 +991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af13d26ece4d16c49885f6b59129040e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "contrase\xF1a": {fileID: 738386707}
   usuario: {fileID: 1964565295}
   resultado: {fileID: 2007428340}
+  "contrase\xF1a": {fileID: 859749675}
   inicioSesion: 
 --- !u!1 &1681626110
 GameObject:

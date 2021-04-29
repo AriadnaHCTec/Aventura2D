@@ -13,9 +13,10 @@ Ariadna Huesca Coronado
  */
 public class MenuInicioSesion : MonoBehaviour
 {
-    public Text contraseña;
+    //public Text contraseña;
     public Text usuario;
     public Text resultado;
+    public InputField contraseña;
     public string inicioSesion;
     public static MenuInicioSesion instance;
 
@@ -38,6 +39,7 @@ public class MenuInicioSesion : MonoBehaviour
         WWWForm forma = new WWWForm();
         forma.AddField("nombreUsuario", usuario.text);
         forma.AddField("contraseñaUsuario", contraseña.text);
+        //print(contraseña.text)
         UnityWebRequest request = UnityWebRequest.Post("http://3.17.77.93:8080/usuario/iniciarSesion", forma);
         //Aqu� es la bifurcaci�n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
