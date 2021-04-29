@@ -10290,7 +10290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 648182400}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 859499417}
+        m_TargetAssemblyTypeName: Epilogo, Assembly-CSharp
+        m_MethodName: ClickBoton1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &648182400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10481,7 +10493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 688457714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 859499417}
+        m_TargetAssemblyTypeName: Epilogo, Assembly-CSharp
+        m_MethodName: ClickBoton2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &688457714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10713,7 +10737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 617204588}
   sentences:
-  - "Mam\xE1: Hola hijo d\xF3nde estabas?"
+  - "Mam\xE1: \xBFHola hijo d\xF3nde estabas?"
   - "Jugador: Constru\xED una m\xE1quina para producir comida."
   - "Mam\xE1: \xBFEnserio? \xBFC\xF3mo?"
   - "Jugador: Si, aprend\xEDa sobre varias temas de ciencia."
@@ -10899,13 +10923,14 @@ GameObject:
   - component: {fileID: 859499415}
   - component: {fileID: 859499414}
   - component: {fileID: 859499413}
+  - component: {fileID: 859499417}
   m_Layer: 5
   m_Name: CanvasEpilogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &859499413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10989,6 +11014,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &859499417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859499412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1d6552dbd741f4d970329f0c725477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas1: {fileID: 1803471020}
+  canvas2: {fileID: 230712445}
+  canvas3: {fileID: 7791267}
 --- !u!1 &903032734
 GameObject:
   m_ObjectHideFlags: 0
@@ -11217,8 +11257,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: 63}
-  m_SizeDelta: {x: 1696.1, y: 450.1633}
+  m_AnchoredPosition: {x: 0, y: 109.3463}
+  m_SizeDelta: {x: 1680.829, y: 542.856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980621987
 MonoBehaviour:
@@ -11240,7 +11280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd5023fa698efae478572f4fc911ee2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7613b774d7cbc54fa9f54b4d47bead8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12993,7 +13033,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1556172405}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 859499417}
+        m_TargetAssemblyTypeName: Epilogo, Assembly-CSharp
+        m_MethodName: ClickBoton3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1556172405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22376,11 +22428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -140.81
+      value: -142.61
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.88
+      value: 8.44
       objectReference: {fileID: 0}
     - target: {fileID: 1896916700197239177, guid: c3e6ed553056911408993eec602d52c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22441,7 +22493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1803471021
 RectTransform:
   m_ObjectHideFlags: 0

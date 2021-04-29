@@ -11,6 +11,7 @@ public class ActivarPreguntas : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject CanvasDialogo;    
+    public GameObject libro;//para aparecerlo hasta que acabe las preguntas
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -21,11 +22,12 @@ public class ActivarPreguntas : MonoBehaviour
             string texto = System.IO.File.ReadAllText(pathRelativo);
 
             if(PlayerPrefs.HasKey("preguntas" + texto + currentSceneName)){
-                //Destroy(CanvasPregunta);
                 //activar canvas dialogo
                 CanvasDialogo.SetActive(false);
+                libro.SetActive(true);
             }else{
                 CanvasDialogo.SetActive(true);
+                libro.SetActive(true);
             }
         }
     }
