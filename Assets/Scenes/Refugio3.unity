@@ -13584,7 +13584,7 @@ MonoBehaviour:
   - "Mam\xE1: Gracias hijo."
   - "Jugador: \xBFPor qu\xE9 lloras?"
   - "Mam\xE1: No te quer\xEDa decir pero el refugio se va a quedar sin comida en
-    unos d\xEDas. Y no s\xE9 que vamos a hacer."
+    unos d\xEDas. No s\xE9 qu\xE9 vamos a hacer."
   - "Jugador: No te preocupes mam\xE1, voy a hacer algo para solucionarlo."
   typingSpeed: 0.01
   panel: {fileID: 782034197}

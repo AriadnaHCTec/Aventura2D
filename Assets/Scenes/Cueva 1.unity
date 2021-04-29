@@ -2034,11 +2034,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1630609381}
   sentences:
-  - "Kathleen: Hola joven, que hace s\xF3lo en una cueva?"
+  - "Kathleen: Hola joven, \xBFQu\xE9 hace s\xF3lo en una cueva?"
   - 'Jugador: Estoy buscando cristales para crear comida.'
-  - "Jugador: Pero no s\xE9 cuales son."
-  - "Kathleen: Descuida, yo te ense\xF1are cuales son y te dir\xE9 como puedes maniobrar
-    con ellos."
+  - "Jugador: Pero no s\xE9 cu\xE1les son."
+  - "Kathleen: Descuida, yo te ense\xF1ar\xE9 cu\xE1les son y te dir\xE9 c\xF3mo
+    maniobrar con ellos."
   - "Jugador:  \xA1Muchas gracias!"
   typingSpeed: 0.01
   panel: {fileID: 97732595}

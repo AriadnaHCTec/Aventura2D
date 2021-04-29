@@ -349,6 +349,7 @@ MonoBehaviour:
   - "Sr. Mario: De ingenier\xEDa el\xE9ctrica y programaci\xF3n."
   - "Personaje: O\xED que despu\xE9s de la guerra no quedaron libros y desapareci\xF3
     el internet."
+  - "Sr. Mario: toma estos libros, te ser\xE1n de mucha utilidad"
   typingSpeed: 0.005
   panel: {fileID: 1833392974}
   continueButton: {fileID: 85816485}
@@ -1306,9 +1307,9 @@ MonoBehaviour:
   textDisplay: {fileID: 758713233}
   sentences:
   - 'Personaje: Hola Sr. Mario.'
-  - 'Sr. Mario: Hola chico, que se te ofrece?'
-  - "Personaje: Nuestro aire acondicionado se descompuso, podr\xEDa repararlo?"
-  - 'Sr. Mario: Claro, voy por mis herramientas. Si quieres pasa.'
+  - "Sr. Mario: Hola chico, \xBFQu\xE9 se te ofrece?"
+  - "Personaje: Nuestro aire acondicionado se descompuso, \xBFPodr\xEDa repararlo?"
+  - "Sr. Mario: \xA1Claro! Voy por mis herramientas. Si quieres pasa."
   typingSpeed: 0.005
   panel: {fileID: 2037643510}
   continueButton: {fileID: 1540445030}
