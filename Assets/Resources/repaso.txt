@@ -1,0 +1,33 @@
+{
+	"nivel":[
+		{
+			"pregunta":"¿Cuál es la fórmula de la fuerza?",
+			"r1":"F=m/a",
+			"r2":"F=m*a",
+			"r3":"F=m+a",
+			"indice":1
+		},
+		{
+			"pregunta":"¿Cuál no es un estado de la materia?",
+                 	"r1":"Liquido",
+                 	"r2":"Gaseoso",
+                 	"r3":"Condensación",
+                 	"indice":2
+		},
+		{
+			"pregunta":"Calcula el voltaje, entre dos puntos del circuito de una plancha, por el que atraviesa una corriente de 5 amperios y presenta una resistencia de 20 ohmios",
+        		"r1":"0.25V",
+        		"r2":"4V",
+       			"r3":"100V",
+        		"indice":2
+		},
+                {
+			"pregunta":"Desarrolla (x-5)^2 (producto notable)",
+            		"r1":"x^2-10x+25",
+            		"r2":"5x^2-10x+25",
+            		"r3":"10x^2-5x+25",
+            		"indice":0
+            		}
+
+	]
+}

@@ -7,10 +7,10 @@
 			"r3":"F=m+a",
 			"indice":1
 		},
-		{"pregunta":"Conforme disminuye la fuerza potencial, aumenta la fuerza:",
-        "r1":"cinética",
-        "r2":"enérgica",
-        "r3":"de inercia",
+		{"pregunta":"Segun la fórmula anterior, despeja la aceleración:",
+        "r1":"a=F/m",
+        "r2":"a=F*m",
+        "r3":"a=m/F",
         "indice":0
 		},
 		{"pregunta":"¿Cuál es el valor de la fuerza de gravedad en la Tierra?",

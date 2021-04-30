@@ -5778,10 +5778,10 @@ RectTransform:
   m_Father: {fileID: 1543579442}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 450.8092}
-  m_SizeDelta: {x: 0, y: -901.6183}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -89.190796}
+  m_SizeDelta: {x: 1920, y: 178.38171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763922136
 MonoBehaviour:
@@ -6579,7 +6579,7 @@ PrefabInstance:
     - target: {fileID: 628208859259795707, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: textJson
       value: 
-      objectReference: {fileID: 4900000, guid: 199bd1102c12e30478f818333989e5da, type: 3}
+      objectReference: {fileID: 4900000, guid: d5819dc7fd40b574aaa0d43c9227a0ec, type: 3}
     - target: {fileID: 7751652508783863781, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_SizeDelta.x
       value: 500
@@ -6730,7 +6730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7751652510539854227, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 110
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7751652510709203377, guid: 799bfb301c7a2174db3444e6f3e67e67, type: 3}
       propertyPath: m_FontData.m_MinSize

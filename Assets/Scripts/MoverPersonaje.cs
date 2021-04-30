@@ -45,7 +45,7 @@ public class MoverPersonaje : MonoBehaviour
                 rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocidadY);
             }
 
-            if (Input.GetButtonDown("Fire2"))//Click izquierdo
+            if (Input.GetKeyDown(KeyCode.H))//tecla h
             {
                 //GameObject nuevo = Instantiate(proyectil);
                 rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);

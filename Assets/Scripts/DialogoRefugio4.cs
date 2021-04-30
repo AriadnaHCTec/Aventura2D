@@ -15,8 +15,10 @@ public class DialogoRefugio4 : MonoBehaviour
     public GameObject canvasFinal;//Canvas que cuenta el epilogo
     public GameObject colliderPiso;//borarr el collider que activa la primera platica
     public GameObject HUD;//para desactivarlo
+    public GameObject maquina;
 
     void Start(){
+        maquina.SetActive(true);
         PlayerPrefs.DeleteAll();
 
 
