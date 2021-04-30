@@ -6852,8 +6852,8 @@ MonoBehaviour:
   textDisplay: {fileID: 616096351}
   sentences:
   - 'Albert Einstein: Hola chico.'
-  - "Jugador: Hola, necesito su ayuda. No s\xE9 qu\xE9 ecuaciones usar para mi m\xE1quina"
-  - 'Jugador: para hacer comida.'
+  - "Paul: Hola, necesito su ayuda. No s\xE9 qu\xE9 ecuaciones usar para mi m\xE1quina"
+  - 'Paul: para hacer comida.'
   - "Albert Einstein: Interesante, te ayudar\xE9."
   typingSpeed: 0.01
   panel: {fileID: 403637953}

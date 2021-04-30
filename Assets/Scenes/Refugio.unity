@@ -9213,9 +9213,9 @@ MonoBehaviour:
   textDisplay: {fileID: 816631680}
   sentences:
   - "Mam\xE1: Hola hijo, \xBFQu\xE9 crees? Se descompuso el aire acondicionado."
-  - "Hijo: Oh no, \xBFAhora qu\xE9 hacemos?"
+  - "Paul: Oh no, \xBFAhora qu\xE9 hacemos?"
   - "Mam\xE1: Ve con el Sr. Mario, me dijeron que \xE9l es ingeniero."
-  - "Hijo: Si mam\xE1, voy volando."
+  - "Paul: Si mam\xE1, voy volando."
   typingSpeed: 0.01
   panel: {fileID: 482618003}
   continueButton: {fileID: 992924954}

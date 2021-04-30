@@ -10820,11 +10820,11 @@ MonoBehaviour:
   textDisplay: {fileID: 617204588}
   sentences:
   - "Mam\xE1: Hola hijo, \xBFD\xF3nde estabas?"
-  - "Jugador: Constru\xED una m\xE1quina para producir comida."
+  - "Paul: Constru\xED una m\xE1quina para producir comida."
   - "Mam\xE1: \xBFEn serio? \xBFC\xF3mo?"
-  - "Jugador: Si, aprend\xED sobre varias temas de ciencia."
+  - "Paul: Si, aprend\xED sobre varias temas de ciencia."
   - "Mam\xE1: \xA1Estoy muy orgullosa de ti!"
-  - "Jugador: Gracias mam\xE1, hay que compartir esto con todo el mundo para evitar
+  - "Paul: Gracias mam\xE1, hay que compartir esto con todo el mundo para evitar
     la extinci\xF3n humana."
   typingSpeed: 0.01
   panel: {fileID: 1988444458}

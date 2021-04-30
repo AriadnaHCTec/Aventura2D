@@ -13662,12 +13662,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1880184408}
   sentences:
-  - "Jugador: Hola mam\xE1, ya le avis\xE9 al ingeniero."
+  - "Paul: Hola mam\xE1, ya le avis\xE9 al ingeniero."
   - "Mam\xE1: Gracias hijo."
-  - "Jugador: \xBFPor qu\xE9 lloras?"
+  - "Paul: \xBFPor qu\xE9 lloras?"
   - "Mam\xE1: No te quer\xEDa decir pero el refugio se va a quedar sin comida en
     unos d\xEDas. No s\xE9 qu\xE9 vamos a hacer."
-  - "Jugador: No te preocupes mam\xE1, voy a hacer algo para solucionarlo."
+  - "Paul: No te preocupes mam\xE1, voy a hacer algo para solucionarlo."
   typingSpeed: 0.01
   panel: {fileID: 782034197}
   continueButton: {fileID: 1811597121}

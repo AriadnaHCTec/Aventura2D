@@ -345,9 +345,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1628112223}
   sentences:
-  - "Personaje: \xBFDe qu\xE9 son esos libros?"
+  - "Paul: \xBFDe qu\xE9 son esos libros?"
   - "Sr. Mario: De ingenier\xEDa el\xE9ctrica y programaci\xF3n."
-  - "Personaje: O\xED que despu\xE9s de la guerra no quedaron libros y desapareci\xF3
+  - "Paul: O\xED que despu\xE9s de la guerra no quedaron libros y desapareci\xF3
     el internet."
   - "Sr. Mario: toma estos libros, te ser\xE1n de mucha utilidad"
   typingSpeed: 0.005
@@ -1306,9 +1306,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 758713233}
   sentences:
-  - 'Personaje: Hola Sr. Mario.'
+  - 'Paul: Hola Sr. Mario.'
   - "Sr. Mario: Hola chico, \xBFQu\xE9 se te ofrece?"
-  - "Personaje: Nuestro aire acondicionado se descompuso, \xBFPodr\xEDa repararlo?"
+  - "Paul: Nuestro aire acondicionado se descompuso, \xBFPodr\xEDa repararlo?"
   - "Sr. Mario: \xA1Claro! Voy por mis herramientas. Si quieres pasa."
   typingSpeed: 0.005
   panel: {fileID: 2037643510}

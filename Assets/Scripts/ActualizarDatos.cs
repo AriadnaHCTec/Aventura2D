@@ -69,7 +69,7 @@ public class ActualizarDatos : MonoBehaviour
         forma.AddField("puntos", datos.puntos);
         forma.AddField("fechaInicio", datos.horaInicioInicioSesion);
         forma.AddField("fechaFinal", datos.horaFinalInicioSesion);
-        UnityWebRequest request = UnityWebRequest.Post("http://http://3.17.77.93:8080/usuario/agregarUsuarioNivel", forma);
+        UnityWebRequest request = UnityWebRequest.Post("http://3.17.77.93:8080/usuario/agregarUsuarioNivel", forma);
         //Aqu� es la bifurcaci�n.
         yield return request.SendWebRequest(); //Regresa, ejecuta y espera
         // Ya regres�, se termin� de ejecutar. 
