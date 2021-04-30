@@ -5,6 +5,7 @@ using UnityEngine;
 /*
 Sirve para asignar metodo a boton para cargar
 canvas de preguntas
+Miguel Ángel Pérez López
 */
 
 public class CanvasExplicacion : MonoBehaviour

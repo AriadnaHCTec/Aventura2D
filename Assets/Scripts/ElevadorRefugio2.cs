@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+Controla el paso de niveles a refugio3
+Miguel Ángel Pérez López
+ */
 public class ElevadorRefugio2 : MonoBehaviour
 {
     public bool validar;

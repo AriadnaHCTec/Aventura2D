@@ -4,6 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ Diálogo de Refugio
+Miguel Ángel Pérez López
+ */
 public class DialogoRefugio4 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;

@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Movimiento del ingeniero cuando este interactua con el personaje
+Miguel Ángel Pérez López
+ */
 public class IngenieroCamina : MonoBehaviour
 {
     //Variables

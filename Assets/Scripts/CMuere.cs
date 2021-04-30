@@ -4,6 +4,7 @@ using UnityEngine;
 
 /*
  Animaci�n activada cuando el personaje se muera.
+Ariadna Huesca Coronado
  */
 public class CMuere : MonoBehaviour
 {

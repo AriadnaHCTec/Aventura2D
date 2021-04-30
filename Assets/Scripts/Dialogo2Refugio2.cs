@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-
+/*
+ Diálogos del nivel de Refugio 2
+Miguel Ángel Pérez López
+ */
 public class Dialogo2Refugio2 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;

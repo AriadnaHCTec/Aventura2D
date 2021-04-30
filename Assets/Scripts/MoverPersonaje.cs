@@ -21,12 +21,7 @@ public class MoverPersonaje : MonoBehaviour
     void Start()
     {
         // Inicializar variables
-        rigidbody = GetComponent<Rigidbody2D>();    // Enlazar RB -> script
-        //float x = PlayerPrefs.GetFloat("posicionX", -3.4f);
-        //float y = PlayerPrefs.GetFloat("posicionY", -1.8f);
-        //SaludPersonaje.instance.posicionX = x;
-        //SaludPersonaje.instance.posicionY = y;
-        //gameObject.transform.position = new Vector3(x, y, -5);        
+        rigidbody = GetComponent<Rigidbody2D>();    // Enlazar RB -> script  
     }
 
     // Update is called once per frame (FRECUENTEMENTE, 60 veces/seg)
@@ -47,13 +42,8 @@ public class MoverPersonaje : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.H))//tecla h
             {
-                //GameObject nuevo = Instantiate(proyectil);
                 rigidbody.velocity = new Vector2(0, rigidbody.velocity.y);
                 estaAnimacion = true;
-                //GetComponent<SpriteRenderer>().enabled = false;
-                //rigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
-                // Prender la explosión
-                // moneda.transform.hijo del transform(transform de la explosion).explosion.Se hace activa
                 gameObject.transform.GetChild(3).gameObject.SetActive(true);
                 StartCoroutine(GenerarDisparo());
             }

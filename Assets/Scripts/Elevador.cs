@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ Controla el paso de un nivel a otro
+Miguel Ángel Pérez López
+ */
 public class Elevador : MonoBehaviour
 {
     public bool validar;

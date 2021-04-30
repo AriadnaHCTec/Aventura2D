@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Valida la máquina
+Miguel Ángel Pérez López
+ */
 public class Maquina : MonoBehaviour
 {
     public bool validar;

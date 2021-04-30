@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ Control de la información general del estado del usuario
+Miguel Ángel Pérez López
+ */
 public class SaludPersonaje : MonoBehaviour
 {
     //public string nombreUsuario = "";

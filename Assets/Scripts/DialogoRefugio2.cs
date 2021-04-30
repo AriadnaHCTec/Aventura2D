@@ -4,6 +4,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/*
+ Diálogo del nivel Refugio 2
+Miguel Ángel Pérez López
+*/
 public class DialogoRefugio2 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;

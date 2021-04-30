@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
+ Diálogo de Refugio
+Miguel Ángel Pérez López
+ */
 public class DialogRefugio3 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;

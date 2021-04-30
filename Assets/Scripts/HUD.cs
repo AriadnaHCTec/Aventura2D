@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;//para imagen
 
+/*
+ Controla la vida del personaje y los corazones que aparecerán en la parte superior
+Javier Moreno
+ */
 public class HUD : MonoBehaviour
 {
     public Image imagen1;

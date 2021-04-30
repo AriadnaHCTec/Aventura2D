@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ Control del Menú
+Javier Moreno
+ */
 public class Menu : MonoBehaviour
 {
     public Text password;

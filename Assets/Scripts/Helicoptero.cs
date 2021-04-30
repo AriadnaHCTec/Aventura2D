@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ Hace transición de escena al interactuar con el helicóptero
+Miguel Ángel Pérez López
+ */
 public class Helicoptero : MonoBehaviour
 {
     public bool validar;

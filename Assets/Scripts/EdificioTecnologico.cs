@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+/*
+ Controla los player prefs cuando termina el nivel y las monedas
+Miguel Ángel Pérez López
+ */
 public class EdificioTecnologico : MonoBehaviour
 {
     public static bool validar;

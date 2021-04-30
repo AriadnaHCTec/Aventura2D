@@ -4,7 +4,7 @@ using UnityEngine;
 
 /*
  * Permite que la cámara siga al personaje
- * Autor: Roberto Mtz. Román
+ * Autor: Javier Moreno
  */
 public class MoverCamara : MonoBehaviour
 {

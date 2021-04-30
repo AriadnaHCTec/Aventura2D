@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Interacción con el libro
+Sarahí Armenta
+ */
 public class Libro : MonoBehaviour
 {
     public bool validar;

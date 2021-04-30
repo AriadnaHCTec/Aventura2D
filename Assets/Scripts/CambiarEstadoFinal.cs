@@ -7,9 +7,13 @@ using UnityEngine.Networking; // para red, UnityWebRequest
 using Newtonsoft.Json; //JsonConvert
 using UnityEngine.SceneManagement;
 
-
+/*
+ Envía un POST a la página para que actualice el estado del usuario a finalizad=true
+Miguel Ángel Pérez López
+ */
 public class CambiarEstadoFinal : MonoBehaviour
 {
+    
     //Encapsular los datos para convertir f�cilmente a JSON
     public struct DatosPartida
     {

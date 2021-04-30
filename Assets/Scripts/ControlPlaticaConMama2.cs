@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Control de la plática con Mamá
+Miguel Ángel Pérez López
+ */
 public class ControlPlaticaConMama2 : MonoBehaviour
 {
     public GameObject CanvasDialogo;

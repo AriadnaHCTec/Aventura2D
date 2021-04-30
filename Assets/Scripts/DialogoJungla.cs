@@ -4,6 +4,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+/*
+ Diálogo del nivel Jungla
+Miguel Ángel Pérez López
+ */
 public class DialogoJungla : MonoBehaviour
 {
 public TextMeshProUGUI textDisplay;

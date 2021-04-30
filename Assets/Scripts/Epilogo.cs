@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ Diálogo que saldrá al terminar el juego
+Miguel Ángel Pérez López
+ */
 public class Epilogo : MonoBehaviour
 {
     /*public GameObject boton1;

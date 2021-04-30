@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
+ Interacción con el Jetpack
+Sarahí Armenta
+ */
 public class Jetpack : MonoBehaviour
 {
     public bool validar;

@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/*
+ Menu pausa
+Miguel Ángel Pérez López
+ */
 public class MenuPausa : MonoBehaviour
 {
     private bool estaPausado; //true->esta en pausa
